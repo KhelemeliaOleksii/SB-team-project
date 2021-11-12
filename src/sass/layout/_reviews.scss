@@ -1,0 +1,19 @@
+.reviews-item__item {
+  //   @include align-items;
+  width: 280px;
+  height: 308px;
+}
+
+.reviews-item__text {
+  display: block;
+  width: 157px;
+  height: 239px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2.55;
+  text-align: center;
+  color: #000000;
+  //   @include font-config(500, normal, 2.55, 0em, #000000);
+}
