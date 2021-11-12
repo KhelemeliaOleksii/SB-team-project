@@ -1,0 +1,82 @@
+.products{
+    padding-top: 121px;
+    padding-bottom: 98px;
+}
+
+.products__text{
+margin-bottom: 15px;
+font-family: Titan One;
+font-weight: 400;
+font-size: 18px;
+line-height: calc(21 / 18);
+text-align: center;
+text-transform: uppercase;
+color: #FFA5BA;
+}
+
+.products__item{
+margin-bottom: 30px;
+font-family: Titan One;
+font-weight: 400;
+font-size: 34px;
+line-height: calc(39 / 34);
+text-align: center;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+color: #D41443;
+}
+.our-product{
+    padding-top: 113px;
+    // padding-bottom: 98px;
+    margin-bottom: -30px;
+
+}
+.our-product__section{
+padding-top: 160px;
+margin-top: 30px;
+margin: 0 auto;
+width: 280px;
+height: 485px;
+background-color: #FFB8CA;
+// border-bottom-left-radius: 54px;
+border-radius: 24px;
+text-align: center;
+margin-bottom: 130px;
+}
+.our-product__section-title{
+    margin-bottom: 30px;
+font-family: Titan One;
+font-weight: 400;
+font-size: 20px;
+line-height: calc(23 / 20);
+text-align: center;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+color: #FFFFFF;
+}
+.our-product__section-article{
+margin: 0 auto;
+margin-bottom: 30px;
+
+width: 200px;
+font-family: DM Sans;
+font-weight: 700;
+font-size: 14px;
+line-height: 1.52;
+text-align: center;
+letter-spacing: 0.04em;
+color: #FFFFFF;
+}
+.our-product__section-btn{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+}
+.our-product__section--yellow{
+    background-color: #F0D1A5;
+}
+
+.our-product__section--green{
+background-color:  #C2E297;
+}
