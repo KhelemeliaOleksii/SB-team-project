@@ -1,0 +1,16 @@
+// .backdrop {
+//     position: fixed;
+//     @include flex-display (nowrap, center, center);
+//     width: 100vw;
+//     height: 100vh;
+//     background-color: rgba(0, 0, 0, 0.2);
+//     top: 0;
+//     left: 0;
+//     @include transition(opacity var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1),
+//     visibility var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1));
+//     &.is-hidden {
+//       opacity: 0;
+//       visibility: hidden;
+//       pointer-events: none;
+//     }
+//   }
