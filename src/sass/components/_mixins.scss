@@ -1,0 +1,108 @@
+
+@mixin box-shadow($shadow1, $shadow2:false, $shadow3:false, $shadow4:false, $shadow5:false) {
+    $params: $shadow1;
+     @if $shadow2 
+       { $params: $shadow1, $shadow2; }
+       @if $shadow3 != false
+         { $params: $shadow1, $shadow2, $shadow3; }
+         @if $shadow4 != false
+           { $params: $shadow1, $shadow2, $shadow3, $shadow4; }
+           @if $shadow5 != false
+             { $params: $shadow1, $shadow2, $shadow3, $shadow4, $shadow5; }
+   
+     -webkit-box-shadow: $params;
+        -moz-box-shadow: $params;
+             box-shadow: $params;
+   
+   }
+//    @mixin flex-basis($v: 4) {
+//      -ms-flex-preferred-size: calc(100% / #{$v} - var(--horisondal-content-offset-positive));
+//         flex-basis: calc(100% / #{$v} - var(--horisondal-content-offset-positive));
+//    }
+   @mixin justify-content ($jc) {
+     @if  $jc == 'flex-start' {
+       -webkit-box-pack: start;
+        -ms-flex-pack: start;
+         justify-content: $jc;    
+     } @else if $jc == 'flex-end' {
+       -webkit-box-pack: end;
+        -ms-flex-pack: end;
+         justify-content: $jc;    
+     } @else if $jc == 'space-between' {
+       -webkit-box-pack: justify;
+       -ms-flex-pack: justify;
+       justify-content: $jc;
+     } @else if $jc == 'space-around' {
+       -ms-flex-pack: distribute;
+       justify-content: $jc;
+     } @else {
+       -webkit-box-pack: $jc;
+        -ms-flex-pack: $jc;
+         justify-content: $jc;
+     }
+   }
+   @mixin align-items ($ai) {
+     @if  $ai == 'flex-start' {
+       -webkit-box-align: start;
+       -ms-flex-align: start;
+       align-items: flex-start;
+       } @else if $ai == 'flex-end' {
+         -webkit-box-align: end;
+         -ms-flex-align: end;
+         align-items: flex-end;
+       } @else {
+         -webkit-box-align: $ai;
+         -ms-flex-align: $ai;
+         align-items: $ai;
+       }
+   }
+   @mixin flex-wrap ($wrp) {
+     -ms-flex-wrap: $wrp;
+     flex-wrap: $wrp;
+   }
+   @mixin flex-display($wrp: nowrap, $jc: flex-start, $ai:flex-start) {
+     display: -webkit-box;
+       display: -ms-flexbox;
+         display: flex;
+       @include flex-wrap($wrp);  
+       @include justify-content($jc);
+       @include align-items($ai);
+   }
+   @mixin font-config ($fw, $fs, $lh, $ls, $clr) {
+     font-weight: $fw;
+     font-size: $fs;
+     line-height: $lh;
+     letter-spacing: $ls;
+     color: $clr;
+   }
+   @mixin transition($value1, $value2:false, $value3:false, $value4:false, $value5:false) {
+     $params: $value1;
+      @if $value2 
+        { $params: $value1, $value2; }
+        @if $value3 != false
+          { $params: $value1, $value2, $value3; }
+          @if $value4 != false
+            { $params: $value1, $value2, $value3, $value4; }
+            @if $value5 != false
+              { $params: $value1, $value2, $value3, $value4, $value5; }
+     -webkit-transition: $params;
+     -o-transition: $params;
+     transition: $params;
+    }
+   @mixin transform($v) {
+     -webkit-transform: $v;
+     -ms-transform: $v;
+         transform: $v;
+   }
+   @mixin visually-hidden() {
+     position: absolute;
+     width: 1px;
+     height: 1px;
+     margin: -1px;
+     padding: 0;
+     overflow: hidden;
+     border: 0;
+     clip: rect(0 0 0 0);
+   }
+   
+   
