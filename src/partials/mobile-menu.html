@@ -1,4 +1,8 @@
-<button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+<button
+  class="menu-toggle js-open-menu"
+  aria-expanded="false"
+  aria-controls="mobile-menu"
+>
   <svg
     width="24"
     height="24"
@@ -30,23 +34,42 @@
     </svg>
   </button>
 
-  <button class="menu-button">Buy now</button>
+  <button class="menu-button" data-modal-buy-open><div class="menu-button__text">Buy now</div></button>
 
   <ul class="mobile-menu">
     <li class="mobile-menu__item">
       <a href="index.html" class="mobile-menu__link mobile-menu__link--active">Home</a>
     </li>
     <li class="mobile-menu__item">
-      <a href="" class="mobile-menu__link">About us</a>
+      <a href="#about-us" class="mobile-menu__link">About us</a>
     </li>
     <li class="mobile-menu__item">
-      <a href="" class="mobile-menu__link">How it’s made?</a>
+      <a href="#how" class="mobile-menu__link">How it’s made?</a>
     </li>
     <li class="mobile-menu__item">
-      <a href="" class="mobile-menu__link">Our products</a>
+      <a href="#products" class="mobile-menu__link">Our products</a>
     </li>
     <li class="mobile-menu__item">
-      <a href="" class="mobile-menu__link">Contact</a>
+      <a href="#contact" class="mobile-menu__link">Contact</a>
     </li>
   </ul>
+</div>
+<div class="backdrop is-hidden" data-modal-buy>
+  <div class="modal">
+    <form class="modal__form">
+      <p id="contact-details-head">
+        Оставьте свои данные, мы вам перезвоним
+      </p>
+      <div class="form__field">
+        <div class="form__row">
+          <label for="email" class="form__label">Email</label>
+          <input type="text" name="email" id="email" class="form__input" />
+        </div>
+
+      <button type="submit" class="button-modal">Отправить</button>
+    </form>
+    <button class="modal-close-button" data-modal-buy-close>
+      x
+    </button>
+  </div>
 </div>

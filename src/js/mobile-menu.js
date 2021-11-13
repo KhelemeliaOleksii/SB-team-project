@@ -17,6 +17,16 @@
 
   openMenuBtn.addEventListener('click', toggleMenu);
   closeMenuBtn.addEventListener('click', toggleMenu);
+  document.querySelectorAll('.mobile-menu__link').forEach(item => {
+    item.addEventListener('click', event => {
+      event.preventDefault();
+      mobileMenu.classList.remove('is-open');
+      bodyScrollLock.enableBodyScroll(document.body);
+      setTimeout(() => {
+        document.querySelector('#' + event.target.href.split('#')[1]).scrollIntoView({block: "center", behavior: "smooth"})
+      }, 250);
+    });
+  });
 
   // Закрываем мобильное меню на более широких экранах
   // в случае изменения ориентации устройства.
@@ -26,4 +36,22 @@
     openMenuBtn.setAttribute('aria-expanded', false);
     bodyScrollLock.enableBodyScroll(document.body);
   });
+})();
+
+(() => {
+  const mobileMenu = document.querySelector('.js-menu-container');
+  const refs = {
+    openModalBtn: document.querySelector('[data-modal-buy-open]'),
+    closeModalBtn: document.querySelector('[data-modal-buy-close]'),
+    modal: document.querySelector('[data-modal-buy]'),
+  };
+
+  refs.openModalBtn.addEventListener('click', toggleModal);
+  refs.closeModalBtn.addEventListener('click', toggleModal);
+
+  function toggleModal() {
+    mobileMenu.classList.remove('is-open');
+    bodyScrollLock.enableBodyScroll(document.body);
+    refs.modal.classList.toggle('is-hidden');
+  }
 })();

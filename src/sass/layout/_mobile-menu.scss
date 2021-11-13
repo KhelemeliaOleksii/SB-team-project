@@ -128,4 +128,20 @@
   font-weight: bold;
   outline: none;
   border: none;
+  cursor: pointer;
+}
+
+.menu-button__text {
+  &:after {
+    content: '';
+    width: 8px;
+    height: 8px;
+    border: 2px solid #d41443;
+    transform: rotate(45deg);
+    border-left: none;
+    border-bottom: none;
+    border-radius: 2px;
+    display: inline-flex;
+    margin-left: 15px;
+  }
 }
