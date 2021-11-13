@@ -1,6 +1,9 @@
 .products{
     padding-top: 121px;
     padding-bottom: 98px;
+//     @media screen and (min-width: 768px) {
+//     padding-top: 100px;
+//   }
 }
 
 .products__text{
@@ -78,6 +81,7 @@ right: 127px;
 margin: 0 auto;
 // background-position:center;
 background-image: url(../images/pointswhite.svg);
+// fill: chartreuse;
 }
 .our-product__section-title{
 margin-bottom: 66px;
@@ -111,28 +115,47 @@ color: #FFFFFF;
     height: 40px;
     border-radius: 50%;
     border: none;
+    position: relative;
+background-color: ffffff;
+    transition: background-color 550ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-// .our-product__section-btn-svg{
-//     display: block;
-//     margin: 0 auto;
-//     width: 40px;
-//     height: 40px;
-//     color: crimson;
-// }
+.our-product__section-btn:hover,
+.our-product__section-btn:focus{
+background-color: gold;
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
 
 
 .our-product__section-btn::before{
-    content: " ";
-    display: block;
-    // background-image: url(../images/arrow.svg);
-    height: 20px;
+content: " ";
+position: absolute;
+display: inline-block;
+left: 11px;
+border: solid #D41443;
+border-width: 2px 0 0 0;
+width: 15px;
+height: 5px;
+
+    // background-image: url(../images/arrow-right2.svg);
     // use href="./img/icons.svg#icon-linkedin1"
-    background-image: url(../images/arrow-right2.svg);
-        block-size: none;
-    background-repeat: no-repeat;
-    background-position: center;
-    fill: chartreuse;
-        background-color: crimson;
+    //     block-size: none;
+    // background-repeat: no-repeat;
+    // background-position: center;
+
+}
+.our-product__section-btn::after{
+content: " ";
+top: 17px;
+left: 18px;
+position: absolute;
+display: inline-block;
+height: 5px;
+width: 5px;
+border: solid #D41443;
+border-width: 0 2px 2px 0;
+padding: 3px;
+transform: rotate(-45deg);
     }
 
 .our-product__section--yellow{
@@ -141,4 +164,8 @@ color: #FFFFFF;
 
 .our-product__section--green{
 background-color:  #C2E297;
+}
+.product-top-wrapper {
+position: relative;
+overflow: hidden;
 }
