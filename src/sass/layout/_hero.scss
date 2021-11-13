@@ -21,6 +21,9 @@
 .hero__bg-ice-cream {
   //   background-color: black;
   background-image: url(../images/mobil/hero-icecream-mobil-1x.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   width: 171px;
   height: 410px;
   position: absolute;
