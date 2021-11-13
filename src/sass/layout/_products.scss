@@ -31,6 +31,7 @@ color: #D41443;
     margin-bottom: -30px;
 
 }
+
 .our-product__section{
 position: relative;
 padding-bottom: 161px;
@@ -54,6 +55,7 @@ position: absolute;
 top: -113px;
 left: 16px;
 right: 15px;
+margin: 0 auto;
 background-image: url(../images/mobil/product1-mobil-1x.png);
 
 }
@@ -73,7 +75,8 @@ position: absolute;
 top: 215px;
 left: 127px;
 right: 127px;
-// background-position: center;
+margin: 0 auto;
+// background-position:center;
 background-image: url(../images/pointswhite.svg);
 }
 .our-product__section-title{
