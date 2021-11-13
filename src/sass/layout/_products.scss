@@ -15,7 +15,7 @@ color: #FFA5BA;
 }
 
 .products__item{
-margin-bottom: 30px;
+margin-bottom: 144px;
 font-family: Titan One;
 font-weight: 400;
 font-size: 34px;
@@ -26,25 +26,57 @@ text-transform: uppercase;
 color: #D41443;
 }
 .our-product{
-    padding-top: 113px;
+    // padding-top: 113px;
     // padding-bottom: 98px;
     margin-bottom: -30px;
 
 }
 .our-product__section{
-padding-top: 160px;
+position: relative;
+padding-bottom: 161px;
 margin-top: 30px;
 margin: 0 auto;
 width: 280px;
 height: 485px;
 background-color: #FFB8CA;
-// border-bottom-left-radius: 54px;
 border-radius: 24px;
 text-align: center;
 margin-bottom: 130px;
 }
+.our-product__section::before{
+content: "";
+display: block;
+width: 249px;
+height: 252px;
+position: absolute;
+top: -113px;
+left: 16px;
+right: 15px;
+background-image: url(../images/mobil/product1-mobil-1x.png);
+
+}
+.our-product__section:nth-child(2):before{
+    background-image: url(../images/mobil/product2-mobil-1x.png);
+}
+.our-product__section:nth-child(3):before{
+    background-image: url(../images/mobil/product3-mobil-1x.png);
+}
+
+.our-product__section::after{
+content: '';
+display: block;
+width: 26px;
+height: 6px;
+position: absolute;
+top: 215px;
+left: 127px;
+right: 127px;
+// background-position: center;
+background-image: url(../images/pointswhite.svg);
+}
 .our-product__section-title{
-    margin-bottom: 30px;
+margin-bottom: 66px;
+padding-top: 161px;
 font-family: Titan One;
 font-weight: 400;
 font-size: 20px;
@@ -53,11 +85,12 @@ text-align: center;
 letter-spacing: 0.04em;
 text-transform: uppercase;
 color: #FFFFFF;
+
 }
 .our-product__section-article{
 margin: 0 auto;
 margin-bottom: 30px;
-
+// outline: 1px solid tomato;
 width: 200px;
 font-family: DM Sans;
 font-weight: 700;
@@ -68,11 +101,35 @@ letter-spacing: 0.04em;
 color: #FFFFFF;
 }
 .our-product__section-btn{
+    padding: 0;
     width: 40px;
     height: 40px;
     border-radius: 50%;
     border: none;
 }
+// .our-product__section-btn-svg{
+//     display: block;
+//     margin: 0 auto;
+//     width: 40px;
+//     height: 40px;
+//     color: crimson;
+// }
+
+
+.our-product__section-btn::before{
+    content: " ";
+    display: block;
+    // background-image: url(../images/arrow.svg);
+    height: 20px;
+    // use href="./img/icons.svg#icon-linkedin1"
+    background-image: url(../images/arrow-right2.svg);
+        block-size: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    fill: chartreuse;
+        background-color: crimson;
+    }
+
 .our-product__section--yellow{
     background-color: #F0D1A5;
 }
