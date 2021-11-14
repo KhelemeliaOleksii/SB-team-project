@@ -11,10 +11,13 @@
   width: 100%;
   padding-left: 30px;
   padding-right: 30px;
-  position: absolute;
+  // position: absolute;
+  // top: -84px;
+}
+.contacts__list {
+  position: relative;
   top: -84px;
 }
-
 .contacts-item {
   padding: 43px 20px;
   width: 220px;
