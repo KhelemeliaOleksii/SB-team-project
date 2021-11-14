@@ -6,8 +6,14 @@
     max-width: 480px;
     @media screen and (min-width: 768px) {
       max-width: 768px;
+      // Компроісне рішення. Для кожної секції свій паддінг 
+      padding-left: 36px;
+      padding-right: 36px;  
     }
     @media screen and (min-width: 1280px) {
       max-width: 1200px;
+      // Компроісне рішення. Для кожної секції свій паддінг 
+      padding-left: 115px;
+      padding-right: 115px;  
     }
   }

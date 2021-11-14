@@ -1,17 +1,19 @@
 .hero {
-  background-color: rgba(255, 184, 202, 1);
+  background-color: var(--hero-bg-color);
+}
+
+.hero__container {
   padding-top: 27px;
   height: 446px;
   overflow: hidden;
   width: 100%;
   position: relative;
-  //   background-image: url(../../images/mobil/hero-icecream-mobil-1x.png);
 }
 
 .hero__bg-circle {
   width: 345px;
   height: 345px;
-  background: rgba(255, 165, 186, 1);
+  background: var(--circle-title-color);
   border-radius: 100%;
   position: absolute;
   right: -62px;
@@ -19,7 +21,6 @@
 }
 
 .hero__bg-ice-cream {
-  //   background-color: black;
   background-image: url(../images/mobil/hero-icecream-mobil-1x.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -43,12 +44,12 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
 
-  color: #ffffff;
+  color: var(--white-color);
 }
 
 .hero__title--accent {
   font-size: 47px;
-  color: #d41443;
+  color: var(--btn-first-color);
 }
 
 .hero__btn-nav-list {
@@ -68,13 +69,13 @@
   font-weight: normal;
   font-size: 8px;
   line-height: calc(10 / 8);
-  background-color: rgba(212, 20, 67, 1);
+  background-color: var(--btn-first-color);
   border-radius: 20px;
   padding: 7px 14px;
-  color: #ffffff;
+  color: var(--white-color);
 }
 
 .hero__btn-nav-item--color {
-  color: rgba(212, 20, 67, 1);
-  background-color: #ffffff;
+  color: var(--btn-first-color);
+  background-color: var(--white-color);
 }
