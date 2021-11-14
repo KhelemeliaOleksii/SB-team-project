@@ -1,10 +1,11 @@
-.reviews {
+.reviews-container {
   padding-top: 194px;
 }
 
 .reviews-items__list {
   position: relative;
   margin: auto;
+  max-width: 280px;
 }
 
 .reviews-items__item {
@@ -28,7 +29,7 @@
 .reviews-item__text {
   margin: 0 auto;
   width: 100%;
-  height: 239px;
+  height: 241px;
   max-width: 157px;
   font-family: DM Sans;
   font-style: normal;
