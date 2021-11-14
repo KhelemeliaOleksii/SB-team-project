@@ -1,5 +1,5 @@
 .section-footer {
-  background-color: #fff5f6;
+  background-color: var(--footer-bg-color);
   @media screen and (max-width: 767px) {
     padding-bottom: 43px;
   }
@@ -10,7 +10,7 @@
   font-size: 18px;
   line-height: 1.16;
   text-transform: uppercase;
-  color: #ffa5ba;
+  color: var(--circle-title-color);
   @media screen and (max-width: 767px) {
     margin-bottom: 17px;
   }
@@ -22,7 +22,7 @@
   line-height: 1.05;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #d41443;
+  color: var(--btn-first-color);
 }
 
 @media screen and (max-width: 767px) {
@@ -34,6 +34,10 @@
 
 .section-footer__list {
   display: flex;
+  justify-content: flex-end;
+  @media screen and (max-width: 1279px) {
+    margin-bottom: 46px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -45,9 +49,19 @@
   }
 }
 
+.section-footer__svg {
+  width: 32px;
+  height: 32px;
+  fill: #fea5bb;
+  &:hover,
+  &:focus {
+    fill: #d41443;
+  }
+}
+
 .section-footer__link {
   border-radius: 50%;
-  background-color: tomato;
+  color: tomato;
   display: block;
   @media screen and (max-width: 767px) {
     width: 32px;
@@ -57,17 +71,14 @@
 
 @media screen and (max-width: 767px) {
   .soc-wrapp {
-    width: 153px;
     margin-left: auto;
-    margin-bottom: 46px;
   }
 }
 
 .section-footer__Tell {
-  font-family: DM Sans;
   font-weight: 700;
   text-align: right;
-  color: #000000;
+  color: var(--black-color);
 
   @media screen and (max-width: 767px) {
     font-size: 12px;
@@ -76,13 +87,13 @@
 }
 
 .section-footer__mobil {
-  color: #d41443;
+  color: var(--btn-first-color);
   margin-left: 5px;
 }
 
 .container-copy {
   border-top: 1px solid #e1e1e1;
-  background-color: #fff5f6;
+  background-color: var(--footer-bg-color);
   @media screen and (max-width: 767px) {
     padding-top: 22px;
     padding-bottom: 25px;
@@ -93,11 +104,9 @@
   margin: 0 auto;
 
   text-align: center;
-  font-family: DM Sans;
   font-weight: 700;
   font-size: 14px;
-
-  color: #907e82;
+  color: var(--brown-color-text);
   @media screen and (max-width: 767px) {
     width: 149px;
     line-height: 1.52;
