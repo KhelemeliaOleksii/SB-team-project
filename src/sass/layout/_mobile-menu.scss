@@ -3,26 +3,26 @@
   background: transparent;
 
   path {
-    fill: #d41443;
+    fill: var(--btn-first-color);
   }
 
   &:hover,
   &:focus {
     path {
-      fill: #ffffff;
+      fill: var(--white-color);
     }
   }
 }
 
 .js-close-menu {
   path {
-    fill: #ffffff;
+    fill: var(--white-color);
   }
 
   &:hover,
   &:focus {
     path {
-      fill: #000000;
+      fill: var(--black-color);
     }
   }
 }
@@ -72,7 +72,7 @@
   width: 100vw;
   height: 100vh;
   padding: 32px 0;
-  background-color: #e17992;
+  background-color: var(--mob-menu-bg-color);
   z-index: 999;
   overflow: scroll;
   display: flex;
@@ -103,11 +103,11 @@
   text-decoration: none;
   font-weight: 600;
   font-size: 14px;
-  color: #ffffff;
+  color: var(--white-color);
 
   &:hover,
   &:focus {
-    color: #d41443;
+    color: var(--btn-first-color);
   }
 }
 
@@ -123,7 +123,7 @@
   margin: 28px 20px 20px 20px;
   border-radius: 22px;
   height: 44px;
-  color: #d41443;
+  color: var(--btn-first-color);
   font-size: 16px;
   font-weight: bold;
   outline: none;
@@ -136,12 +136,26 @@
     content: '';
     width: 8px;
     height: 8px;
-    border: 2px solid #d41443;
+    border: 2px solid var(--btn-first-color);
     transform: rotate(45deg);
     border-left: none;
     border-bottom: none;
     border-radius: 2px;
     display: inline-flex;
     margin-left: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-container {
+    max-width: 254px;
+    left: unset;
+    right: 0;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .js-open-menu {
+    display: none;
   }
 }
