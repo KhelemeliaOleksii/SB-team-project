@@ -117,7 +117,22 @@ width: 280px;
     background-image: url(../images/desktop/product1-desktop1x.png);
   }
 }
+// .our-product__section::before{
+//   animation-name: spin;
+//   animation-duration: 5s;
+//   animation-timing-function: linear;
+//   animation-iteration-count: infinite;
+// }
 
+// @keyframes spin {
+//   0% {
+//     transform: rotate(0deg);
+//   }
+
+//   100% {
+//     transform: rotate(360deg);
+//   }
+// }
 .our-product__section:nth-child(2):before {
   background-image: url(../images/mobil/product2-mobil-1x.png);
   @media screen and (min-width: 768px) {
@@ -181,6 +196,25 @@ width: 280px;
   text-transform: uppercase;
   color: #ffffff;
 
+  animation-name: changeBgColor;
+  animation-duration: 3000ms;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  @keyframes changeBgColor {
+  0% {
+    color: deeppink;
+  }
+
+  50% {
+    color: orange;
+  }
+
+  100% {
+    color: deepskyblue;
+  }
+}
+
   @media screen and (min-width: 768px) {
     padding-top: 133px;
   }
@@ -191,6 +225,9 @@ width: 280px;
 line-height: calc(34 / 30);
   }
 }
+
+
+
 
 .our-product__section-article {
   margin: 0 auto;
@@ -258,6 +295,8 @@ margin-bottom: 50px;
   // background-repeat: no-repeat;
   // background-position: center;
 }
+
+
 .our-product__section-btn::after {
   content: ' ';
   top: 17px;
