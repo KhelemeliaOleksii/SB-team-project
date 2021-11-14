@@ -1,12 +1,18 @@
-<div class="advantages-describe">
-  <div class="container">
+<section class="advantages" id='advantages'>
+<div class="advantages__describe">
+  <div class="advantages container">
     <h2 class="visually__hidden">Our advantages</h2>
     <ul class="advantages__item">
       <li class="advantages__list">
         <div class="advantages__icon">
-          <svg class="advantages__svg" width="33" height="50">
+          <picture>
+            <source 
+            srcset="./images/icon-milk-1.png 1x, ./images/icon-milk-2.png 2x"/>
+            <img class="advantages__img milk" srs="./images/icon-milk-1.png" alt="milk"/>
+          </picture>
+          <!-- <svg class="advantages__svg" width="33" height="50">
             <use href="./images/milksprite.svg#icon-icon1" class="adv-icon"></use>
-          </svg>
+          </svg> -->
         </div>
 
         <h3 class="advantages__figure">721</h3>
@@ -15,9 +21,14 @@
 
       <li class="advantages__list">
         <div class="advantages__icon">
-          <svg class="advantages__svg" width="50" height="50">
+          <picture>
+            <source 
+            srcset="./images/icon-apple-1.png 1x, ./images/icon-apple-2.png 2x"/>
+            <img class="advantages__img apple" srs="./images/icon-apple-1.png" alt="ice-cream"/>
+          </picture>
+          <!-- <svg class="advantages__svg" width="50" height="50">
             <use href="./images/milksprite.svg#icon-icon2" class="adv-icon"></use>
-          </svg>
+          </svg> -->
         </div>
 
         <h3 class="advantages__figure">16kg</h3>
@@ -26,9 +37,15 @@
 
       <li class="advantages__list">
         <div class="advantages__icon">
-          <svg class="advantages__svg" width="44" height="50">
+          <picture>
+            <source 
+            srcset="./images/icon-ice-1.png 1x, ./images/icon-ice-2.png 2x"/>
+            <img class="advantages__img ice" srs="./images/icon-ice-1.png" alt="apple"/>
+          </picture>
+
+          <!-- <svg class="advantages__svg" width="44" height="50">
             <use href="./images/milksprite.svg#icon-icon3" class="adv-icon"></use>
-          </svg>
+          </svg> -->
         </div>
         <h3 class="advantages__figure">84</h3>
         <p class="advantages__text">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
@@ -36,3 +53,4 @@
     </ul>
   </div>
 </div>
+</section>
