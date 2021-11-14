@@ -2,6 +2,30 @@
   background-color: #fff5f6;
   padding-top: 145px;
   padding-bottom: 40px;
+
+  background-repeat: no-repeat;
+  background-position: left 0 bottom 11%;
+  background-size: contain;
+
+  @media screen and (max-width: 320px) {
+    background-image: url(../images/mobil/fon-milk-mobil-1x.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/mobil/fon-milk-mobil-2x.png);
+    }
+  }
+  @media screen and (min-width: 321px) and (max-width: 767px) {
+    background-image: url(../images/desktop/fon-milk-desktop1x.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/desktop/fon-milk-desktop2x.png);
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    background-image: url(../images/desktop/fon-milk-desktop1x.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/desktop/fon-milk-desktop2x.png);
+    }
+  }
 }
 
 .section-about__title {
@@ -46,17 +70,21 @@
 }
 
 .section-about__image-thumb {
-  max-width: 480px;
+  max-width: 440px;
 
   margin-bottom: 45px;
 }
 
 .section-about__image {
-  width: 100%;
+  max-width: 100%;
 }
 
 .section-about__inform {
-  max-width: 220px;
+  max-width: 380px;
+
+  @media screen and (max-width: 320px) {
+    max-width: 220px;
+  }
 }
 
 .section-about__inform-primary {
@@ -96,11 +124,23 @@
 
   cursor: pointer;
   text-align: center;
-
-  width: 176px;
+  justify-content: center;
+  align-items: center;
   padding: 13px 37px;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:hover {
+    background-color: #ecebeb;
+  }
 }
 
 .section-about__button--icon {
   fill: #d41443;
+
+  margin-top: 3px;
+  margin-left: 12px;
 }
