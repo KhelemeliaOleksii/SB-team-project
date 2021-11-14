@@ -19,14 +19,31 @@
   text-align: left;
   margin-right: 115px;
   margin-bottom: 38px;
+color: #fff5f6;
+background-color: #fff5f6;
+}
+
+.adv-icon {
+  color: #fff5f6;
+  fill: currentColor;
 }
 
 .advantages__svg {
-  margin-bottom: 36px;
+margin-bottom: 36px;
+position: relative;
+width: 33px;
+height: 50px;
+fill: #fea5bb;
+
+
 }
 
 .advantages__icon {
-  display: inline-block;
+margin-top: 66px;  
+margin-bottom: 36px;
+position: relative;
+
+
 }
 
 .advantages__figure {
