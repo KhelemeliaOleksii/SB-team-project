@@ -1,1 +1,84 @@
-<p>Mandryk</p>
+<section class="section reviews-section" id="reviews">
+  <div class="container reviews-container">
+    <ul class="reviews-items__list list-no-ls">
+      <li class="reviews-items__item slides fade">
+        <img
+          src="../src/images/mobil/comment-foto1-mobil-1x.png"
+          alt="first comment"
+          class="reviews-item__image"
+        />
+        <div class="reviews-item__background">
+          <div class="reviews-item__gradient">
+            <p class="reviews-item__text">
+              Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In
+              hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.
+            </p>
+          </div>
+        </div>
+        <p class="reviews-item__title">Emily, Los Angeles</p>
+      </li>
+      <li class="reviews-items__item slides fade">
+        <img
+          src="../src/images/mobil/comment-foto1-mobil-1x.png"
+          alt="first comment"
+          class="reviews-item__image"
+        />
+        <div class="reviews-item__background">
+          <div class="reviews-item__gradient">
+            <p class="reviews-item__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque libero, accusantium
+              corrupti quos eum, consequatur itaque deleniti voluptas iste laborum, obcaecati iure
+              quidem expedita ullam!
+            </p>
+          </div>
+        </div>
+        <p class="reviews-item__title">Emily, Los Angeles</p>
+      </li>
+      <li class="reviews-items__item slides fade">
+        <img
+          src="../src/images/mobil/comment-foto1-mobil-1x.png"
+          alt="first comment"
+          class="reviews-item__image"
+        />
+        <div class="reviews-item__background">
+          <div class="reviews-item__gradient">
+            <p class="reviews-item__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque sunt asperiores
+              exercitationem adipisci earum quos facere neque est impedit! Quasi deserunt autem
+              voluptatem officia at.
+            </p>
+          </div>
+        </div>
+        <p class="reviews-item__title">Emily, Los Angeles</p>
+      </li>
+    </ul>
+    <div style="text-align: center">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+  </div>
+  <script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName('slides');
+      var dots = document.getElementsByClassName('dot');
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = 'none';
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {
+        slideIndex = 1;
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(' active', '');
+      }
+      slides[slideIndex - 1].style.display = 'flex';
+      dots[slideIndex - 1].className += ' active';
+      setTimeout(showSlides, 5000);
+    }
+  </script>
+</section>

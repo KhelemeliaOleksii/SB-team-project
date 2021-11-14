@@ -1,0 +1,132 @@
+.reviews-container {
+  padding-top: 194px;
+}
+
+.reviews-items__list {
+  position: relative;
+  margin: auto;
+  max-width: 280px;
+}
+
+.reviews-items__item {
+  //   @include align-items;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.reviews-item__background {
+  position: relative;
+  padding-top: 43px;
+  width: 100%;
+  height: 308px;
+  background-color: #fafafa;
+}
+
+.reviews-item__gradient {
+  margin: 0 auto;
+  width: 100%;
+  height: 241px;
+  max-width: 157px;
+  background: repeating-linear-gradient(#fafafa, #fafafa 28px, #e1e1e1 30px, #e1e1e1 23px);
+}
+
+.reviews-item__text {
+  position: absolute;
+  width: 100%;
+  height: 241px;
+  max-width: 157px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2.55;
+  text-align: center;
+  color: #000000;
+  //   @include font-config(500, normal, 2.55, 0em, #000000);
+}
+
+.reviews-item__gradient::before {
+  position: absolute;
+  top: 30px;
+  content: '';
+  display: block;
+  width: 54px;
+  height: 40px;
+  background-image: url(../images/comment.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.reviews-item__title::before {
+  margin: 0 auto;
+  content: '';
+  display: block;
+  width: 54px;
+  height: 40px;
+  background-image: url(../images/pointspink.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.reviews-item__image {
+  position: absolute;
+  top: -120px;
+}
+
+.reviews-item__title {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.86;
+  text-align: center;
+  color: #000000;
+  margin: 30px;
+}
+
+// slider
+
+.slides {
+  display: none;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #d9d9d9;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #d31342;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
