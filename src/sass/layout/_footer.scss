@@ -14,13 +14,9 @@
 .footer-container {
   @media screen and (min-width: 768px) {
     display: flex;
-    padding-left: 36px;
-    padding-right: 36px;
   }
   @media screen and (min-width: 1280px) {
     display: flex;
-    padding-left: 115px;
-    padding-right: 115px;
   }
 }
 
@@ -39,6 +35,7 @@
 
 .section-footer__label {
   font-family: Titan One;
+  font-weight: 400;
   text-transform: uppercase;
   color: var(--circle-title-color);
   @media screen and (max-width: 767px) {
@@ -62,6 +59,7 @@
 .section-footer__text {
   font-family: Titan One;
   text-transform: uppercase;
+  font-weight: 400;
   color: var(--btn-first-color);
   @media screen and (max-width: 767px) {
     font-size: 34px;
