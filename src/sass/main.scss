@@ -4,7 +4,6 @@
  */
 
 // Стили для файла с примером HTML-фрагмента
-@import './example';
 @import './base/reset';
 @import './utils/variables';
 @import './base/common';
@@ -22,3 +21,4 @@
 @import './layout/contacts';
 @import './layout/footer';
 @import './layout/mobile-menu';
+@import './layout/modal';

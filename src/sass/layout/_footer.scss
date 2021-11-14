@@ -1,0 +1,114 @@
+.section-footer {
+  background-color: var(--footer-bg-color);
+  @media screen and (max-width: 767px) {
+    padding-bottom: 43px;
+  }
+}
+
+.section-footer__label {
+  font-family: Titan One;
+  font-size: 18px;
+  line-height: 1.16;
+  text-transform: uppercase;
+  color: var(--circle-title-color);
+  @media screen and (max-width: 767px) {
+    margin-bottom: 17px;
+  }
+}
+
+.section-footer__text {
+  font-family: Titan One;
+  font-size: 34px;
+  line-height: 1.05;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--btn-first-color);
+}
+
+@media screen and (max-width: 767px) {
+  .slogan-wrapp {
+    width: 232px;
+    margin-bottom: 43px;
+  }
+}
+
+.section-footer__list {
+  display: flex;
+  justify-content: flex-end;
+  @media screen and (max-width: 1279px) {
+    margin-bottom: 46px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .section-footer__item {
+    margin-right: 28px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.section-footer__svg {
+  width: 32px;
+  height: 32px;
+  fill: #fea5bb;
+  &:hover,
+  &:focus {
+    fill: #d41443;
+  }
+}
+
+.section-footer__link {
+  border-radius: 50%;
+  color: tomato;
+  display: block;
+  @media screen and (max-width: 767px) {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .soc-wrapp {
+    margin-left: auto;
+  }
+}
+
+.section-footer__Tell {
+  font-weight: 700;
+  text-align: right;
+  color: var(--black-color);
+
+  @media screen and (max-width: 767px) {
+    font-size: 12px;
+    line-height: 1.83;
+  }
+}
+
+.section-footer__mobil {
+  color: var(--btn-first-color);
+  margin-left: 5px;
+}
+
+.container-copy {
+  border-top: 1px solid #e1e1e1;
+  background-color: var(--footer-bg-color);
+  @media screen and (max-width: 767px) {
+    padding-top: 22px;
+    padding-bottom: 25px;
+  }
+}
+
+.container-copy__copyright {
+  margin: 0 auto;
+
+  text-align: center;
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--brown-color-text);
+  @media screen and (max-width: 767px) {
+    width: 149px;
+    line-height: 1.52;
+  }
+}

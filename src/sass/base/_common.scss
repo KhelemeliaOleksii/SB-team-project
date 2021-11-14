@@ -1,14 +1,12 @@
-//body {
-// font-family: Roboto, sans-serif;
-// color: var(--body-fonts-main-color);
-/* background-color: var(--body-background-main-color); */
-// }
-// .link {
-//   @include transition(color var(--animation-time) cubic-bezier(0.4, 0, 0.2, 1));
-// }
-.link-no-tdn {
-  text-decoration: none;
+body {
+  font-family: 'DM Sans', sans-serif;
+  color: #000000;
+  background-color: #ffffff;
+  }
+  .link-no-tdn {
+    text-decoration: none;
+  }
+  .list-no-ls {
+    list-style: none;
 }
-.list-no-ls {
-  list-style: none;
-}
+
