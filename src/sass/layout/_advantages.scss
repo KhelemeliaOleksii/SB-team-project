@@ -69,37 +69,17 @@
     height: 50px;
     background-repeat: no-repeat;
 
-    background-image: url(../images/mobil/icon-milk-mobile-1x.png);
+    background-image: url(../images/mobil/icon-milk-mobile@1x.png);
 
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
       (-o-min-device-pixel-ratio: 2/1),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/mobil/icon-milk-mobile-2x.png);
+      background-image: url(../images/mobil/icon-milk-mobile@2x.png);
     }
   }
 
-  // @media screen and (min-width: 321px) and (max-width: 767px) {
-  // background-image: url(../images/desktop/icon-milk-desktop-1x.png);
-  // }
-  //   @media (min-device-pixel-ratio: 2),
-  //     (-webkit-min-device-pixel-ratio: 2),
-  //     (-o-min-device-pixel-ratio: 2/1),
-  //     (min-resolution: 192dpi),
-  //     (min-resolution: 2dppx) {
-  //     background-image: url(../images/desktop/icon-milk-desktop-2x.png);
-  //   }
-  // @media screen and (min-width: 1280px) {
-  //     background-image: url(../images/desktop/icon-milk-desktop-1x.png);
-  // }
-  //   @media (min-device-pixel-ratio: 2),
-  //     (-webkit-min-device-pixel-ratio: 2),
-  //     (-o-min-device-pixel-ratio: 2/1),
-  //     (min-resolution: 192dpi),
-  //     (min-resolution: 2dppx) {
-  //     background-image: url(../images/desktop/icon-milk-desktop-2x.png);
-  //   }
 
   @media screen and (min-width: 768 px) {
     margin-bottom: 36px;
@@ -119,35 +99,15 @@
   width: 50px;
   height: 50px;
   background-repeat: no-repeat;
-  background-image: url(../images/mobil/icon-apple-mobile-1x.png);
+  background-image: url(../images/mobil/icon-apple-mobile@1x.png);
   @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (-o-min-device-pixel-ratio: 2/1),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(../images/mobil/icon-apple-mobile-2x.png);
+    background-image: url(../images/mobil/icon-apple-mobile@2x.png);
   }
 
-  // @media screen and (min-width: 321px) and (max-width: 767px) {
-  // background-image: url(../images/tablet/icon-apple-tablet-1x.png);
-  // }
-  //   @media (min-device-pixel-ratio: 2),
-  //     (-webkit-min-device-pixel-ratio: 2),
-  //     (-o-min-device-pixel-ratio: 2/1),
-  //     (min-resolution: 192dpi),
-  //     (min-resolution: 2dppx) {
-  //     background-image: url(../images/tablet/icon-apple-tablet-2x.png);
-  //   }
-  // @media screen and (min-width: 1280px) {
-  //     background-image: url(../images/desktop/icon-apple-desktop-1x.png);
-  // }
-  //   @media (min-device-pixel-ratio: 2),
-  //     (-webkit-min-device-pixel-ratio: 2),
-  //     (-o-min-device-pixel-ratio: 2/1),
-  //     (min-resolution: 192dpi),
-  //     (min-resolution: 2dppx) {
-  //     background-image: url(../images/desktop/icon-apple-desktop-2x.png);
-  //   }
 
   @media screen and (min-width: 768 px) {
     margin-bottom: 36px;
@@ -167,35 +127,15 @@
   width: 44px;
   height: 50px;
   background-repeat: no-repeat;
-  background-image: url(../images/mobil/icon-ice-mobile-1x.png);
+  background-image: url(../images/mobil/icon-ice-mobile@1x.png);
   @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (-o-min-device-pixel-ratio: 2/1),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(../images/mobil/icon-ice-mobile-2x.png);
+    background-image: url(../images/mobil/icon-ice-mobile@2x.png);
   }
 
-  // @media screen and (min-width: 321px) and (max-width: 767px) {
-  // background-image: url(../images/tablet/icon-ice-tablet-1x.png);
-  // }
-  //   @media (min-device-pixel-ratio: 2),
-  //     (-webkit-min-device-pixel-ratio: 2),
-  //     (-o-min-device-pixel-ratio: 2/1),
-  //     (min-resolution: 192dpi),
-  //     (min-resolution: 2dppx) {
-  //     background-image: url(../images/tablet/icon-ice-tablet-2x.png);
-  //   }
-  // @media screen and (min-width: 1280px) {
-  //     background-image: url(../images/desktop/icon-ice-desktop-1x.png);
-  // }
-  //   @media (min-device-pixel-ratio: 2),
-  //     (-webkit-min-device-pixel-ratio: 2),
-  //     (-o-min-device-pixel-ratio: 2/1),
-  //     (min-resolution: 192dpi),
-  //     (min-resolution: 2dppx) {
-  //     background-image: url(../images/desktop/icon-ice-desktop-2x.png);
-  //   }
 
   @media screen and (min-width: 768 px) {
     margin-bottom: 36px;
