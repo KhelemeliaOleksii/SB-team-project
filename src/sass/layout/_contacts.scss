@@ -3,20 +3,34 @@
 }
 .contacts-container {
   background: #fff5f6;
-  padding-bottom: 113px;
+  padding-bottom: 29px;
   position: relative;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 87px;
+  }
+  @media screen and (min-width: 768px) {
+    padding-bottom: 63px;
+  }
 }
 .contacts-wrap {
   margin: 0 auto;
   width: 100%;
   padding-left: 30px;
   padding-right: 30px;
-  // position: absolute;
-  // top: -84px;
-}
-.contacts__list {
   position: relative;
   top: -84px;
+  @media screen and (min-width: 768px) {
+    top: -78px;
+  }
+  @media screen and (min-width: 1200px) {
+    top: -102px;
+  }
+}
+.contacts__list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+  }
 }
 .contacts-item {
   padding: 43px 20px;
@@ -25,36 +39,85 @@
   background: #ffffff;
   border-radius: 30px;
   box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.1);
-  &:not(:last-child) {
-    margin-bottom: 20px;
+  @media screen and(max-width:767px) {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    padding: 50px 30px;
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    width: 330px;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
   }
 }
 .contacts-item__subject {
-  width: 80px;
   font-size: 12px;
   font-family: DM Sans;
+  font-weight: 500;
   line-height: calc(22 / 12);
   text-align: center;
   border-radius: 4px;
   margin-bottom: 25px;
   background: #f0d1a5;
   color: #ffffff;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: fit-content;
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 32px;
+  }
 }
 .green {
   background: #c2e297;
 }
 .contacts-item__title {
+  font-weight: 500;
   font-size: 12px;
   line-height: calc(22 / 12);
   margin-bottom: 10px;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: calc(26 / 14);
+    margin-bottom: 14px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    margin-bottom: 10px;
+  }
 }
 .contacts-item__text {
+  font-weight: 500;
   font-size: 12px;
   line-height: calc(18 / 12);
   color: #907e82;
   margin-bottom: 50px;
   position: relative;
   width: 180px;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: calc(23 / 14);
+    margin-bottom: 60px;
+    width: 145px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    margin-bottom: 64px;
+    width: 243px;
+  }
 }
 .contacts-item__text::after,
 .contacts-item__schedule-list::after {
@@ -66,17 +129,43 @@
   margin-top: 25px;
   left: 0;
   width: 180px;
+  @media screen and (min-width: 768px) {
+    margin-top: 30px;
+    width: 157px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-top: 32px;
+    width: 234px;
+  }
 }
 .contacts-item__schedule-list {
   position: relative;
   margin-bottom: 25px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 32px;
+  }
 }
 .contacts-item__schedule-item {
+  font-weight: 500;
   font-family: DM Sans;
   font-size: 12px;
   line-height: calc(22 / 12);
   &:not(:last-child) {
     margin-bottom: 10px;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: calc(26 / 14);
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: calc(30 / 16);
   }
 }
 
@@ -88,12 +177,27 @@
 }
 .contacts-link {
   padding-top: 25px;
+  @media screen and (min-width: 768px) {
+    padding-top: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 32px;
+  }
 }
 .contacts-link__tel,
 .contacts-link__mail {
+  font-weight: 500;
   font-size: 12px;
   line-height: calc(18 / 12);
   color: #907e82;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: calc(26 / 14);
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: calc(30 / 16);
+  }
 }
 .btn {
   font-size: 16px;
@@ -104,19 +208,39 @@
   border-radius: 22px;
   text-align: center;
   border: none;
-  &:not(:last-child) {
-    margin-bottom: 54px;
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    width: 191px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 198px;
   }
 }
 .contacts-btn {
   margin: 0 auto;
   margin-top: 54px;
-
   width: 220px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    margin-top: 81px;
+    width: 100%;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-top: 86px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
 }
 .btn-pink {
   display: flex;
@@ -125,10 +249,14 @@
   background: #d41342;
   color: #ffffff;
   cursor: pointer;
+  align-items: center;
   &:hover,
   &:focus {
     background: #ffffff;
     color: #d41443;
+  }
+  @media screen and (min-width: 768px) {
+    margin-right: 15px;
   }
 }
 .btn-white {
@@ -139,17 +267,25 @@
   color: #d41443;
   position: relative;
   cursor: pointer;
+  align-items: center;
+  justify-content: center;
   &:hover,
   &:focus {
     background: #d41342;
     color: #ffffff;
   }
 }
-// .contacts-btn__icon-pink {
-//   fill: none;
-//   fill: #ffffff;
-// }
-// .contacts-btn__icon-white {
-//   fill: none;
-//   fill: #d41443;
-// }
+.contacts-btn__icon-pink {
+  margin-left: 8px;
+  fill: #ffffff;
+  @media screen and (min-width: 768px) {
+    margin-left: 13px;
+  }
+}
+.contacts-btn__icon-white {
+  margin-left: 8px;
+  fill: #d41443;
+  @media screen and (min-width: 768px) {
+    margin-left: 13px;
+  }
+}
