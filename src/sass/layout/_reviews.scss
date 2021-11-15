@@ -11,7 +11,7 @@
 
 .reviews-items__list {
   position: relative;
-  margin: auto;
+  margin: 0 auto;
   max-width: 280px;
   @media screen and (min-width: 768px) {
     max-width: 620px;
@@ -91,6 +91,7 @@
 .reviews-item__gradient::before {
   position: absolute;
   top: 30px;
+  left: 70px;
   content: '';
   display: block;
   width: 54px;
@@ -98,17 +99,30 @@
   background-image: url(../images/comment.svg);
   background-repeat: no-repeat;
   background-position: center;
+  @media screen and (min-width: 768px) {
+    left: 60px;
+  }
+  @media screen and (min-width: 1280px) {
+    left: 20px;
+  }
 }
 
 .reviews-item__title::before {
   margin: 0 auto;
   content: '';
   display: block;
-  width: 54px;
-  height: 40px;
+  width: 32px;
+  height: 4px;
   background-image: url(../images/pointspink.svg);
   background-repeat: no-repeat;
   background-position: center;
+  margin-bottom: 18px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 14px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 15px;
+  }
 }
 
 .reviews-item__image {
@@ -125,6 +139,12 @@
   text-align: center;
   color: #000000;
   margin: 30px;
+  @media screen and (min-width: 768px) {
+    margin: 24px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin: 15px;
+  }
 }
 
 // slider
