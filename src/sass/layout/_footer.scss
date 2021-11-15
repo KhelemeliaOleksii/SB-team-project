@@ -116,6 +116,10 @@
   &:focus {
     fill: #d41443;
   }
+  @media screen and (min-width: 768px) {
+    width: 34px;
+    height: 34px;
+  }
 }
 
 .section-footer__link {
@@ -125,6 +129,10 @@
   @media screen and (max-width: 767px) {
     width: 32px;
     height: 32px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 34px;
+    height: 34px;
   }
 }
 
