@@ -88,6 +88,7 @@ width: 280px;
   }
 }
 .our-product__section::before {
+  	position: relative;
   content: '';
   display: block;
   width: 249px;
@@ -164,8 +165,9 @@ width: 280px;
   right: 127px;
   margin: 0 auto;
 
-  //   background-image: url(../images/icons/3points-white.svg);
-  background-image: url(../images/pointswhite.svg);
+
+  // background-image: url(../images/pointswhite.svg);
+  background-image: url(../images/desktop/111points-desktop1x.png);
   background-repeat: no-repeat;
   //   background-position: center;
   // background-position: contain;
@@ -184,7 +186,7 @@ width: 280px;
   }
   
 }
-.our-product__section-title {
+.our-product__section-title, .our-product__back-title {
   margin-bottom: 30px;
   padding-top: 161px;
   font-family: Titan One;
@@ -282,7 +284,8 @@ margin-bottom: 50px;
   display: inline-block;
   
 //   left: 11px;
- left: 16px;
+top: 19px;
+ left: 15px;
   border: solid #d41443;
   border-width: 2px 0 0 0;
 //   width: 15px;
@@ -299,8 +302,8 @@ margin-bottom: 50px;
 
 .our-product__section-btn::after {
   content: ' ';
-  top: 17px;
-  left: 18px;
+  top: 16px;
+  left: 17px;
   position: absolute;
   display: inline-block;
   height: 5px;
@@ -318,3 +321,84 @@ margin-bottom: 50px;
 .our-product__section--green {
   background-color: #c2e297;
 }
+
+// ----------------оборот карточки--------------
+
+.flip-container {
+  -webkit-perspective: 1000;
+  -moz-perspective: 1000;
+  -o-perspective: 1000;
+  perspective: 1000;
+
+}
+
+	.flip-container:hover .flipper,  
+  .flip-container.hover .flipper {
+		-webkit-transform: rotateY(180deg);
+		-moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+		transform: rotateY(180deg);
+	}
+
+.our-product__back{
+  padding-bottom: 161px;
+  display: block;
+  margin: 0 auto;
+  width: 280px;
+  height: 485px;
+  background-color: #ffffff;
+  border-radius: 24px;
+  text-align: center;
+    margin-bottom: 130px;
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  @media screen and (min-width: 768px) {
+    margin-left: 20px;
+    padding-bottom: 152px;
+        margin-bottom: 0;
+      
+  }
+  @media screen and (min-width: 1280px) {
+      height: 525px;
+      width: 335px;
+        margin-left: 27px;
+    
+  }
+}
+
+.flipper {
+
+	-webkit-transition: 0.6s;
+	-webkit-transform-style: preserve-3d;
+
+	-moz-transition: 0.6s;
+	-moz-transform-style: preserve-3d;
+  
+  -o-transition: 0.6s;
+	-o-transform-style: preserve-3d;
+
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+}
+
+.our-product__back {
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+  -webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+.our-product__section-article--dark{
+  color: #000000;
+}
+
+
+
