@@ -1,0 +1,82 @@
+.advantages-section {
+  position: relative;
+  width: 100%;
+}
+.advantages-container {
+  background-color: var(--footer-bg-color);
+}
+.advantages__list {
+  display: block;
+}
+
+.visually__hidden {
+  position: absolute;
+  width: 1px;
+  overflow: hidden;
+  border: 0;
+}
+
+.advantages__item {
+  text-align: left;
+
+  margin-bottom: 38px;
+  color: var(--footer-bg-color);
+  background-color: var(--footer-bg-color);
+}
+
+.advantages__figure {
+  font-family: Titan One;
+  text-align: left;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: calc(55 / 48);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding-bottom: 15px;
+  
+  color: var(--btn-first-color);
+  padding-top: 38px;
+}
+
+.advantages__figure.milk::before {
+  position: relative;
+  content: '';
+  display: block;
+  bottom: 16px;
+  width: 33px;
+  height: 50px;
+  background-repeat: no-repeat;
+  background-image: url(../images/icon-milk-1x.png);
+}
+
+.advantages__figure.apple::before {
+  position: relative;
+  content: '';
+  display: block;
+  bottom: 16px;
+  width: 50px;
+  height: 50px;
+  background-repeat: no-repeat;
+  background-image: url(../images/icon-apple-1x.png);
+}
+
+.advantages__figure.ice::before {
+  position: relative;
+  content: '';
+  display: block;
+  bottom: 16px;
+  width: 50px;
+  height: 50px;
+
+  background-repeat: no-repeat;
+  background-image: url(../images/icon-ice-1x.png);
+}
+
+.advantages__text {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  color: var(--black-color);
+}
