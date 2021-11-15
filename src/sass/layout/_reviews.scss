@@ -1,12 +1,24 @@
 .reviews-container {
   padding-top: 194px;
   padding-bottom: 170px;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 197px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 234px;
+  }
 }
 
 .reviews-items__list {
   position: relative;
   margin: auto;
   max-width: 280px;
+  @media screen and (min-width: 768px) {
+    max-width: 620px;
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 926px;
+  }
 }
 
 .reviews-items__item {
@@ -23,6 +35,12 @@
   width: 100%;
   height: 308px;
   background-color: #fafafa;
+  @media screen and (min-width: 768px) {
+    height: 164px;
+  }
+  @media screen and (min-width: 1280px) {
+    height: 138px;
+  }
 }
 
 .reviews-item__gradient {
@@ -31,6 +49,14 @@
   height: 241px;
   max-width: 157px;
   background: repeating-linear-gradient(#fafafa, #fafafa 28px, #e1e1e1 30px, #e1e1e1 23px);
+  @media screen and (min-width: 768px) {
+    height: 93px;
+    max-width: 460px;
+  }
+  @media screen and (min-width: 1280px) {
+    height: 65px;
+    max-width: 880px;
+  }
 }
 
 .reviews-item__text {
@@ -46,6 +72,20 @@
   text-align: center;
   color: #000000;
   //   @include font-config(500, normal, 2.55, 0em, #000000);
+  @media screen and (min-width: 768px) {
+    height: 83px;
+    max-width: 460px;
+    font-size: 14px;
+    line-height: 2.16;
+    letter-spacing: 0.04em;
+  }
+  @media screen and (min-width: 1280px) {
+    height: 52px;
+    width: 100%;
+    max-width: 880px;
+    font-size: 16px;
+    line-height: 1.86;
+  }
 }
 
 .reviews-item__gradient::before {
@@ -101,13 +141,33 @@
 }
 
 .dot {
-  height: 15px;
-  width: 15px;
+  height: 12px;
+  width: 12px;
   margin: 0 2px;
   background-color: #d9d9d9;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
+}
+
+.home-icon {
+  height: 12px;
+  width: 12px;
+  margin: 0;
+  background-color: transparent;
+  border-radius: 0;
+  border: none;
+  display: inline-block;
+  background-image: url(../images/home.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  fill: #d9d9d9;
+  transition: background-color 0.6s ease;
+}
+
+.home-icon.active {
+  background-color: transparent;
 }
 
 .active {
