@@ -68,13 +68,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 30px;
+
   padding: 5px;
   border: none;
   background-color: rgba(0, 0, 0, 0%);
   @media screen and (min-width: 768px) {
     z-index: 1;
     fill: var(--btn-first-color);
+    margin-right: 30px;
   }
   @media screen and (min-width: 1280px) {
     display: none;
