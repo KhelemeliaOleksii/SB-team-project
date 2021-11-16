@@ -10,10 +10,10 @@
 }
 
 .contacts-section {
-  background: #fff5f6;
+  background: var(--white-color);
 }
 .contacts-container {
-  background: #fff5f6;
+  background: var(--footer-bg-color);
   padding-bottom: 29px;
   position: relative;
   @media screen and (min-width: 768px) {
@@ -39,7 +39,12 @@
 }
 .contacts__list {
   @media screen and (min-width: 768px) {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
   }
 }
@@ -47,8 +52,9 @@
   padding: 43px 20px;
   width: 220px;
   margin: 0 auto;
-  background: #ffffff;
+  background: var(--white-color);
   border-radius: 30px;
+  -webkit-box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.1);
   box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.1);
   @media screen and(max-width:767px) {
     &:not(:last-child) {
@@ -77,10 +83,13 @@
   border-radius: 4px;
   margin-bottom: 25px;
   background: #f0d1a5;
-  color: #ffffff;
+  color: var(--white-color);
   padding-left: 10px;
   padding-right: 10px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
+
   @media screen and (min-width: 768px) {
     font-size: 16px;
     line-height: calc(30 / 16);
@@ -113,7 +122,7 @@
   font-weight: 500;
   font-size: 12px;
   line-height: calc(18 / 12);
-  color: #907e82;
+  color: var(--brown-color-text);
   margin-bottom: 50px;
   position: relative;
   width: 180px;
@@ -181,10 +190,10 @@
 }
 
 .contacts-item__schedule-title {
-  color: #000000;
+  color: var(--black-color);
 }
 .contacts-item__schedule-time {
-  color: #ffa5ba;
+  color: var(--circle-title-color);
 }
 .contacts-link {
   padding-top: 25px;
@@ -200,7 +209,7 @@
   font-weight: 500;
   font-size: 12px;
   line-height: calc(18 / 12);
-  color: #907e82;
+  color: var(--brown-color-text);
   @media screen and (min-width: 768px) {
     font-size: 14px;
     line-height: calc(26 / 14);
@@ -235,174 +244,119 @@
   margin: 0 auto;
   margin-top: 54px;
   width: 220px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   @media screen and (min-width: 768px) {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+
     margin-top: 81px;
     width: 100%;
   }
   @media screen and (min-width: 1280px) {
     margin-top: 86px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
-    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
     width: 100%;
   }
 }
+.contacts-btn__icon {
+  fill: goldenrod;
+}
 .contacts-btn--pink {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
-  background: #d41342;
-  color: #ffffff;
+  background-color: var(--btn-first-color-hover);
+  color: var(--white-color);
   cursor: pointer;
-  align-items: center;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
-    background: #ffffff;
-    color: #d41443;
+    background-color: var(--white-color);
+    color: var(--btn-first-color);
   }
   @media screen and (min-width: 768px) {
     margin-right: 15px;
   }
 }
 .contacts-btn--white {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
-  background: #ffffff;
-  color: #d41443;
+  background: var(--white-color);
+  color: var(--btn-first-color);
   position: relative;
   cursor: pointer;
-  align-items: center;
-  justify-content: center;
   &:hover,
   &:focus {
-    background: #d41342;
-    color: #ffffff;
+    background-color: var(--btn-first-color-hover);
+    color: var(--white-color);
   }
+
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts-btn__icon-pink {
   margin-left: 8px;
-  fill: #ffffff;
+  fill: var(--white-color);
   @media screen and (min-width: 768px) {
     margin-left: 13px;
   }
 }
 .contacts-btn__icon-white {
   margin-left: 8px;
-  fill: #d41443;
+  fill: var(--btn-first-color);
   @media screen and (min-width: 768px) {
     margin-left: 13px;
   }
 }
-.modal-contacts {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background-color: #ffa5bad9;
-  top: 0px;
-  left: 0px;
-  opacity: 0;
-  visibility: hidden;
-}
-.modal-contacts:target {
-  opacity: 1;
-  visibility: visible;
-}
-.modal-contacts__body {
-  min-height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 30px 10px;
-  // position: relative;
-  border-radius: 10px;
-}
-.modal-contacts__content {
-  position: relative;
-  max-width: 768px;
-  padding: 30px;
-  background-color: #d41342;
-}
-.modal-contacts__close {
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  font-size: 25px;
-  color: #ffffff;
-}
-.modal-contacts__title {
-  color: #ffffff;
-  font-size: 32px;
-  line-height: calc(40 / 32);
-  font-weight: 900;
-  text-align: center;
-}
-// .modal-contacts__form {
-// }
-
-// <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3302.255279076353!2d-118.3804309853327!3d34.139810520558775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c295d250e154c9%3A0xff3165a02b90ff1e!2sIce%20Kream%20Dispensary!5e0!3m2!1sru!2sua!4v1636983557073!5m2!1sru!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-// <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3027.49774905007!2d-73.98528188512964!3d40.64095704989656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25b29ff3bb277%3A0xd4406bb4d1109a07!2sIce%20Cream%20House!5e0!3m2!1sru!2sua!4v1636983624642!5m2!1sru!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-.modal-contacts__title2 {
-  font-weight: bold;
-  font-size: 20px;
-  line-height: calc(23 / 20);
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #ffffff;
-  margin-bottom: 12px;
-}
-.modal-contacts__label {
-  display: block;
-  margin-bottom: 10px;
-  margin-top: 4px;
-  font-size: 12px;
-  line-height: calc(14 / 12);
-  color: #ffffff;
-}
-.modal-contacts__textarea {
-  padding: 12px 16px;
-  height: 120px;
-  resize: none;
-  width: 100%;
-  border-radius: 4px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  background: transparent;
-  outline: none;
-  &:focus {
-    border-color: #ffffff;
-  }
-}
-
-.modal-contacts__input {
-  padding-left: 15px;
-  padding-right: 15px;
-  height: 40px;
-  width: 100%;
-  border-radius: 4px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  background: #ffffff;
-  outline: none;
-}
-
-.modal-contacts__wrapper {
-  display: block;
-  position: relative;
-  margin-top: 4px;
-}
-.centr {
-  margin: 0 auto;
-}
-// .js-menu-container {
-//   position: fixed;
-//   top: 0;
-//   left: 0;
-//   width: 100%;
-//   height: 100%;
-//   transform: translateX(100%);
-// }
