@@ -238,3 +238,60 @@
   margin-top: 3px;
   margin-left: 10px;
 }
+
+// ______________АНИМАЦИИ
+
+.animation {
+  &.section-about {
+    background-size: 100%;
+    animation: scale 700ms linear;
+
+    @keyframes scale {
+      0% {
+        background-size: 200%;
+      }
+      100% {
+        background-size: 100%;
+      }
+    }
+  }
+}
+
+.section-about__image-thumb {
+  @media screen and (min-width: 1280px) {
+    position: relative;
+    z-index: 0;
+    &:hover,
+    &:focus {
+      animation: swing;
+      animation-duration: 700ms;
+
+      &::after {
+        display: block;
+        opacity: 100%;
+      }
+    }
+
+    &::after {
+      content: '';
+      display: none;
+
+      position: absolute;
+      width: 516px;
+      height: 516px;
+      top: 0;
+      left: 0;
+      z-index: 999;
+
+      background-image: url(../images/desktop/myy.png);
+
+      background-repeat: no-repeat;
+      background-position: right -2px bottom 140px;
+      background-size: 38%;
+
+      opacity: 0%;
+
+      animation: rubberBand 800ms linear;
+    }
+  }
+}
