@@ -195,8 +195,8 @@
 }
 
 #upbutton {
-  height: 70px;
-  width: 70px;
+  width: 35px;
+  height: 35px;
   bottom: 20px;
   right: 10px;
   cursor: pointer;
@@ -205,8 +205,16 @@
   background-image: url(../images/up.png);
   background-size: cover;
   transition: transform 0.25s linear;
+  @media screen and (min-width: 768px) {
+    height: 70px;
+    width: 70px;
+  }
 }
 
 #upbutton:hover {
   transform: scale(1.5);
+}
+
+html {
+  scroll-behavior: smooth;
 }
