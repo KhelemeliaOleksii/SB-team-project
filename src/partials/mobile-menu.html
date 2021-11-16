@@ -3,18 +3,8 @@
   aria-expanded="false"
   aria-controls="mobile-menu"
 >
-  <svg
-    width="24"
-    height="24"
-    fill="currentColor"
-    viewBox="0 0 20 20"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <path
-      fill-rule="evenodd"
-      d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-      clip-rule="evenodd"
-    ></path>
+  <svg class="header__burger--icon" width='20' height='12'>
+    <use href='../src/images/milksprite.svg#icon-Burger'></use>
   </svg>
 </button>
 <div class="menu-container js-menu-container" id="mobile-menu">
@@ -41,7 +31,7 @@
       <a href="index.html" class="mobile-menu__link mobile-menu__link--active">Home</a>
     </li>
     <li class="mobile-menu__item">
-      <a href="#about-us" class="mobile-menu__link">About us</a>
+      <a href="#about" class="mobile-menu__link">About us</a>
     </li>
     <li class="mobile-menu__item">
       <a href="#how" class="mobile-menu__link">How it’s made?</a>

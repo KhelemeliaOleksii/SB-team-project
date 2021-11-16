@@ -26,6 +26,7 @@
 .header__burger-btn {
   display: flex;
   align-items: center;
+  z-index: 2;
 }
 
 .header__btn {
@@ -62,23 +63,6 @@
 
 .header__btn--arrow {
   margin-left: 12px;
-}
-
-.header__burger {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 30px;
-  padding: 5px;
-  border: none;
-  background-color: rgba(0, 0, 0, 0%);
-  @media screen and (min-width: 768px) {
-    z-index: 1;
-    fill: var(--btn-first-color);
-  }
-  @media screen and (min-width: 1280px) {
-    display: none;
-  }
 }
 
 .header__nav-list {

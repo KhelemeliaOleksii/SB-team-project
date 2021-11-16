@@ -17,24 +17,24 @@
   }
 
   @media screen and (max-width: 320px) {
-    background-image: url(../images/mobil/fon-milk-mobil-1x.png);
+    background-image: url(../images/mobil/fon-milk-mobil@1x.png);
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(../images/mobil/fon-milk-mobil-2x.png);
+      background-image: url(../images/mobil/fon-milk-mobil@2x.png);
     }
   }
   @media screen and (min-width: 321px) and (max-width: 767px) {
-    background-image: url(../images/desktop/fon-milk-desktop1x.png);
+    background-image: url(../images/desktop/fon-milk-desktop@1x.png);
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(../images/desktop/fon-milk-desktop2x.png);
+      background-image: url(../images/desktop/fon-milk-desktop@2x.png);
     }
   }
 
   @media screen and (min-width: 1280px) {
-    background-image: url(../images/desktop/fon-milk-desktop1x.png);
+    background-image: url(../images/desktop/fon-milk-desktop@1x.png);
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(../images/desktop/fon-milk-desktop2x.png);
+      background-image: url(../images/desktop/fon-milk-desktop@2x.png);
     }
-    background-position: center bottom -17%;
+    background-position: center bottom -10%;
   }
 }
 
@@ -117,7 +117,7 @@
 
   @media screen and (min-width: 1280px) {
     width: 516px;
-    margin-right: 73px;
+    margin-right: 71px;
   }
 }
 
@@ -155,7 +155,7 @@
     font-size: 14px;
     line-height: 1.79;
 
-    margin-top: 50px;
+    padding-top: 50px;
   }
 
   @media screen and (min-width: 1280px) {
@@ -163,7 +163,7 @@
     line-height: 1.75;
     letter-spacing: 0.04em;
 
-    margin-top: 55px;
+    padding-top: 55px;
   }
 }
 
@@ -188,6 +188,12 @@
     line-height: 1.92;
 
     margin-bottom: 45px;
+  }
+
+  &:nth-last-child(2) {
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+      margin-bottom: 60px;
+    }
   }
 }
 
@@ -224,15 +230,11 @@
 
     padding: 12px 37px;
   }
-
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
-    margin-top: 40px;
-  }
 }
 
-// .section-about__button--icon {
-//   fill: #d41443;
+.section-about__button--icon {
+  fill: #d41443;
 
-//   margin-top: 3px;
-//   margin-left: 12px;
-// }
+  margin-top: 3px;
+  margin-left: 10px;
+}

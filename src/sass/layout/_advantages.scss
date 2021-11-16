@@ -1,19 +1,22 @@
 .advantages-section {
   background-color: var(--footer-bg-color);
   padding-bottom: 97px;
-  // @media screen and (min-width: 768px) {
-  //   padding-bottom: 145px;
-  // }
+  @media screen and (min-width: 768px) {
+    padding-bottom: 140px;
+  }
 }
 
-// .advantages__list {
-
-//   @media screen and (min-width: 768px) {
-//     display: flex;
-//     padding-left: 2px;
-// }
-
-
+.advantages__list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    padding-left: -2px;
+  }
+}
+.advantages__card {
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
+}
 .visually__hidden {
   position: absolute;
   width: 1px;
@@ -22,77 +25,68 @@
 }
 
 .advantages__item {
+  margin-right: 70px;
   margin-bottom: 38px;
   color: var(--footer-bg-color);
-  // @media screen and (min-width: 768px) {
-  // //   margin-right: 60px;
-}
-
-.advantages__figure {
-  font-family: Titan One;
-  display: flex;
-  flex-direction: column;
-
-  font-weight: 400;
-  font-size: 48px;
-  line-height: calc(55 / 48);
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  padding-bottom: 15px;
-  color: var(--btn-first-color);
-  //   @media screen and (max-width: 767px) {
-  // //     margin-bottom: 13px; }
-}
-
-.advantages__figure-milk::before {
-  content: '';
-
-  
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
-
-  margin-bottom: 16px;
-  width: 33px;
-  height: 50px;
-  background-repeat: no-repeat;
-
-  @media screen and (max-width: 320px) {
-    background-image: url(../images/mobil/icon-milk-mobile-1x.png);
-  }
-  @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (-o-min-device-pixel-ratio: 2/1),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url(../images/mobil/icon-milk-mobile-2x.png);
+  @media screen and (min-width: 768px) {
+    margin-right: 60px;
   }
 
-  // @media screen and (min-width: 321px) and (max-width: 767px) {
-  // background-image: url(../images/desktop/icon-milk-desktop-1x.png);
-  // }
-  //   @media (min-device-pixel-ratio: 2),
-  //     (-webkit-min-device-pixel-ratio: 2),
-  //     (-o-min-device-pixel-ratio: 2/1),
-  //     (min-resolution: 192dpi),
-  //     (min-resolution: 2dppx) {
-  //     background-image: url(../images/desktop/icon-milk-desktop-2x.png);
-  //   }
-  // @media screen and (min-width: 1280px) {
-  //     background-image: url(../images/desktop/icon-milk-desktop-1x.png);
-  // }
-  //   @media (min-device-pixel-ratio: 2),
-  //     (-webkit-min-device-pixel-ratio: 2),
-  //     (-o-min-device-pixel-ratio: 2/1),
-  //     (min-resolution: 192dpi),
-  //     (min-resolution: 2dppx) {
-  //     background-image: url(../images/desktop/icon-milk-desktop-2x.png);
-  //   }
+  .advantages__figure {
+    font-family: Titan One;
 
-  // @media screen and (min-width: 768 px) {
-  //   margin-bottom: 36px;
-  // }
+    font-weight: 400;
+    font-size: 36px;
+    line-height: calc(41 / 36);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    color: var(--btn-first-color);
+
+    @media screen and (max-width: 767px) {
+      font-size: 48px;
+      margin-bottom: 13px;
+    
+      line-height: calc(55 / 48);
+    }
+
+    @media screen and (min-width: 1280px) {
+      font-size: 58px;
+      margin-bottom: 15px;
+      text-align: right;
+      line-height: calc(66 / 58);
+    }
+  }
+
+  .advantages__figure-milk::before {
+    content: '';
+
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    margin-bottom: 16px;
+    width: 33px;
+    height: 50px;
+    background-repeat: no-repeat;
+
+    background-image: url(../images/mobil/icon-milk-mobile@1x.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (-o-min-device-pixel-ratio: 2/1),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/mobil/icon-milk-mobile@2x.png);
+    }
+  }
+
+
+  @media screen and (min-width: 768 px) {
+    margin-bottom: 36px;
+  }
+  @media screen and (min-width: 1280 px) {
+    margin-bottom: 40px;
+  }
 }
 
 .advantages__figure-apple::before {
@@ -100,45 +94,27 @@
 
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
-
+  display: flex;
   margin-bottom: 16px;
   width: 50px;
   height: 50px;
   background-repeat: no-repeat;
-  background-image: url(../images/mobil/icon-apple-mobile-1x.png);
+  background-image: url(../images/mobil/icon-apple-mobile@1x.png);
   @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (-o-min-device-pixel-ratio: 2/1),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(../images/mobil/icon-apple-mobile-2x.png);
+    background-image: url(../images/mobil/icon-apple-mobile@2x.png);
   }
 
-  // @media screen and (min-width: 321px) and (max-width: 767px) {
-  // background-image: url(../images/desktop/icon-apple-desktop-1x.png);
-  // }
-  //   @media (min-device-pixel-ratio: 2),
-  //     (-webkit-min-device-pixel-ratio: 2),
-  //     (-o-min-device-pixel-ratio: 2/1),
-  //     (min-resolution: 192dpi),
-  //     (min-resolution: 2dppx) {
-  //     background-image: url(../images/desktop/icon-apple-desktop-2x.png);
-  //   }
-  // @media screen and (min-width: 1280px) {
-  //     background-image: url(../images/desktop/icon-apple-desktop-1x.png);
-  // }
-  //   @media (min-device-pixel-ratio: 2),
-  //     (-webkit-min-device-pixel-ratio: 2),
-  //     (-o-min-device-pixel-ratio: 2/1),
-  //     (min-resolution: 192dpi),
-  //     (min-resolution: 2dppx) {
-  //     background-image: url(../images/desktop/icon-apple-desktop-2x.png);
-  //   }
 
-  // @media screen and (min-width: 768 px) {
-  //   margin-bottom: 36px;
-  // }
+  @media screen and (min-width: 768 px) {
+    margin-bottom: 36px;
+  }
+  @media screen and (min-width: 1280 px) {
+    margin-bottom: 40px;
+  }
 }
 
 .advantages__figure-ice::before {
@@ -146,45 +122,27 @@
 
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
-
+  display: flex;
   margin-bottom: 16px;
   width: 44px;
   height: 50px;
   background-repeat: no-repeat;
-  background-image: url(../images/mobil/icon-ice-mobile-1x.png);
+  background-image: url(../images/mobil/icon-ice-mobile@1x.png);
   @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (-o-min-device-pixel-ratio: 2/1),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(../images/mobil/icon-ice-mobile-2x.png);
+    background-image: url(../images/mobil/icon-ice-mobile@2x.png);
   }
 
-  // @media screen and (min-width: 321px) and (max-width: 767px) {
-  // background-image: url(../images/desktop/icon-ice-desktop-1x.png);
-  // }
-  //   @media (min-device-pixel-ratio: 2),
-  //     (-webkit-min-device-pixel-ratio: 2),
-  //     (-o-min-device-pixel-ratio: 2/1),
-  //     (min-resolution: 192dpi),
-  //     (min-resolution: 2dppx) {
-  //     background-image: url(../images/desktop/icon-ice-desktop-2x.png);
-  //   }
-  // @media screen and (min-width: 1280px) {
-  //     background-image: url(../images/desktop/icon-ice-desktop-1x.png);
-  // }
-  //   @media (min-device-pixel-ratio: 2),
-  //     (-webkit-min-device-pixel-ratio: 2),
-  //     (-o-min-device-pixel-ratio: 2/1),
-  //     (min-resolution: 192dpi),
-  //     (min-resolution: 2dppx) {
-  //     background-image: url(../images/desktop/icon-ice-desktop-2x.png);
-  //   }
 
-  // @media screen and (min-width: 768 px) {
-  //   margin-bottom: 36px;
-  // }
+  @media screen and (min-width: 768 px) {
+    margin-bottom: 36px;
+  }
+  @media screen and (min-width: 1280 px) {
+    margin-bottom: 40px;
+  }
 }
 
 .advantages__text {
@@ -192,13 +150,18 @@
   font-family: DM Sans;
   font-style: normal;
   font-weight: 700;
-  font-size: 14px;
-  line-height: calc(24 / 14);
+  font-size: 12px;
+  line-height: calc(20 / 12);
   color: var(--black-color);
 
-  //   @media screen and (max-width: 767px) {
-  // //     flex-direction: column;
-  // font-size:  14px;
-  // line-height: 1.74px;
-  // }
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    font-size: 14px;
+    line-height: calc(28 / 16);
+  }
+  @media screen and (min-width: 1280 px) {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    letter-spacing: 0.02em;
+  }
 }
