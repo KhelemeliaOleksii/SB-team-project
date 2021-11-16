@@ -1,13 +1,80 @@
-.gallery-img {
+/*.gallery-img {
   display: block;
   margin: 0 auto;
   width: 100%;
   padding-bottom: 80px;
 
-  /*@media screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
   }
   @media screen and (min-width: 1200px) {
   }*/
+
+.box {
+  position: relative;
+  width: 138px;
+  height: 138px;
+  margin: 2px;
+  border-radius: 20px;
+}
+
+.box1 {
+  background-image: url(../images/desktop/gallery/img2.jpg);
+
+  left: 70px;
+}
+.box2 {
+  background-image: url(../images/desktop/gallery/img3.jpg);
+  top: 70px;
+  left: 70px;
+}
+.box3 {
+  background-image: url(../images/desktop/gallery/img1.jpg);
+  bottom: 73px;
+  right: 76px;
+}
+.box4 {
+  background-image: url(../images/desktop/gallery/img10.jpg);
+  width: 276px;
+  height: 276px;
+  bottom: 140px;
+  right: 69px;
+}
+.box5 {
+  background-image: url(../images/desktop/gallery/img4.jpg);
+  top: 156px;
+  left: -300px;
+}
+.box6 {
+  background-image: url(../images/desktop/gallery/img5.jpg);
+  left: -200px;
+  bottom: 70px;
+}
+.box7 {
+  background-image: url(../images/desktop/gallery/img6.jpg);
+  position: relative;
+  top: 70px;
+  left: -340px;
+}
+.box8 {
+  background-image: url(../images/desktop/gallery/img7.jpg);
+  left: -330px;
+  bottom: 70px;
+}
+.box9 {
+  background-image: url(../images/desktop/gallery/img8.jpg);
+  top: 70px;
+  right: 470px;
+}
+.box10 {
+  background-image: url(../images/desktop/gallery/img9.jpg);
+  top: -35px;
+  right: 440px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 100%;
 }
