@@ -6,7 +6,6 @@
   }
   @media screen and (min-width: 768px) {
     padding-bottom: 240px;
-
   }
   @media screen and (min-width: 768px) {
     padding-bottom: 310px;
@@ -15,12 +14,17 @@
 
 .advantages__list {
   @media screen and (min-width: 768px) {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     padding-left: -2px;
   }
 }
 .advantages__card {
-  @media screen and (max-width: 767px) {
+  @media screen and (min-width: 768px) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
 }
@@ -37,27 +41,42 @@
   color: var(--footer-bg-color);
   @media screen and (min-width: 768px) {
     margin-right: 60px;
-  }
-  @media screen and (min-width: 768px) {
     margin-bottom: 0;
   }
 }
 
-  .advantages__figure {
-    font-family: Titan One;
+.advantages__figure {
+  font-family: Titan One;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: calc(41 / 36);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  color: var(--btn-first-color);
 
-    font-weight: 400;
-    font-size: 36px;
-    line-height: calc(41 / 36);
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    margin-bottom: 12px;
-    color: var(--btn-first-color);
+  &:hover,
+  &:focus {
+    // color:orange ;
+    animation-name: changeBgColor;
+    animation-duration: 250ms;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    @keyframes changeBgColor {
+      0% {
+        color: deeppink;
+      }
 
-    @media screen and (max-width: 767px) {
+      100% {
+        color: orange;
+      }
+    }
+  }
+    @media screen and (min-width: 768px) {
       font-size: 48px;
       margin-bottom: 13px;
-    
+
       line-height: calc(55 / 48);
     }
 
@@ -74,12 +93,14 @@
 
     background-size: cover;
     background-position: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+
     margin-bottom: 16px;
     width: 33px;
     height: 50px;
     background-repeat: no-repeat;
-
     background-image: url(../images/mobil/icon-milk-mobile@1x.png);
 
     @media (min-device-pixel-ratio: 2),
@@ -89,13 +110,20 @@
       (min-resolution: 2dppx) {
       background-image: url(../images/mobil/icon-milk-mobile@2x.png);
     }
+  
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768 px) {
     margin-bottom: 36px;
   }
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1280 px) {
     margin-bottom: 40px;
   }
+}
+.advantages__figure-milk:hover:before {
+background-image: url(../images/mobil/icon-milk-mobile2@.png);
+    width: 50px;
+    height: 50px;
+    transform: translateX(101%);
 }
 
 .advantages__figure-apple::before {
@@ -103,12 +131,16 @@
 
   background-size: cover;
   background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+
   margin-bottom: 16px;
   width: 50px;
   height: 50px;
   background-repeat: no-repeat;
   background-image: url(../images/mobil/icon-apple-mobile@1x.png);
+
   @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (-o-min-device-pixel-ratio: 2/1),
@@ -117,21 +149,29 @@
     background-image: url(../images/mobil/icon-apple-mobile@2x.png);
   }
 
-
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768 px) {
     margin-bottom: 36px;
   }
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1280 px) {
     margin-bottom: 40px;
   }
+
 }
+.advantages__figure-apple:hover:before {
+background-image: url(../images/mobil/icon-apple-mobile2@.png);
+transform: translateX(101%);
+}
+
 
 .advantages__figure-ice::before {
   content: '';
 
   background-size: cover;
   background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+
   margin-bottom: 16px;
   width: 44px;
   height: 50px;
@@ -145,15 +185,20 @@
     background-image: url(../images/mobil/icon-ice-mobile@2x.png);
   }
 
-
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768 px) {
     margin-bottom: 36px;
   }
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1280 px) {
     margin-bottom: 40px;
   }
 }
 
+.advantages__figure-ice:hover:before {
+background-image: url(../images/mobil/icon-ice-mobile2@.png);
+    width: 50px;
+    height: 50px;
+    transform: translateX(101%);
+}
 .advantages__text {
   content: '';
   font-family: DM Sans;
@@ -168,9 +213,21 @@
     font-size: 14px;
     line-height: calc(28 / 16);
   }
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1280 px) {
     font-size: 14px;
     line-height: calc(24 / 14);
     letter-spacing: 0.02em;
   }
+
+  &:hover
+  // &:focus 
+  {
+color: orange;
+    
+animation-duration: 250ms;
+font-size: 18px;
+font-style: bold;
 }
+}
+
+  
