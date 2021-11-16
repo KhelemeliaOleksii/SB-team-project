@@ -73,7 +73,7 @@
       background-image: url(../images/tablet/hero-icecream-tablet-2x.png);
     }
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     background-image: url(../images/desktop/hero-icecream1x.png);
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(../images/desktop/hero-icecream2x.png);
@@ -106,7 +106,7 @@
       background-image: url(../images/tablet/hero-milk-tablet-2x.png);
     }
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     background-image: url(../images/desktop/hero-milk-desktop1x.png);
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(../images/desktop/hero-milk-desktop2x.png);
@@ -289,7 +289,7 @@
 .hero__info-list {
   position: absolute;
   top: 14px;
-  right: 44px;
+  right: 39px;
   & > .hero__info-item:not(:last-child) {
     margin-bottom: 14px;
   }
@@ -328,7 +328,7 @@
   text-align: right;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  z-index: 2;
+  z-index: 1;
 
   color: var(--btn-first-color);
   position: relative;
