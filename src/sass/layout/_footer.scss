@@ -193,3 +193,20 @@
     letter-spacing: 0.02em;
   }
 }
+
+#upbutton {
+  height: 70px;
+  width: 70px;
+  bottom: 20px;
+  right: 10px;
+  cursor: pointer;
+  position: fixed;
+  z-index: 999;
+  background-image: url(../images/up.png);
+  background-size: cover;
+  transition: transform 0.25s linear;
+}
+
+#upbutton:hover {
+  transform: scale(1.5);
+}
