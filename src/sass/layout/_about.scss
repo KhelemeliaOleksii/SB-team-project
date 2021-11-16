@@ -1,5 +1,5 @@
 .section-about {
-  background-color: #fff5f6;
+  background-color: var(--footer-bg-color);
   padding-top: 145px;
   padding-bottom: 40px;
 
@@ -50,7 +50,7 @@
   text-align: center;
   text-transform: uppercase;
 
-  color: #ffa5ba;
+  color: var(--circle-title-color);
 
   margin-bottom: 15px;
 
@@ -75,7 +75,7 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
 
-  color: #d41443;
+  color: var(--btn-first-color);
 
   margin-bottom: 25px;
 
@@ -147,7 +147,7 @@
   font-size: 12px;
   line-height: 1.58;
 
-  color: #000000;
+  color: var(--black-color);
 
   margin-bottom: 35px;
 
@@ -174,7 +174,7 @@
   font-size: 12px;
   line-height: 1.58;
 
-  color: #907e82;
+  color: var(--brown-color-text);
 
   margin-bottom: 20px;
 
@@ -199,8 +199,8 @@
 
 .section-about__button {
   display: flex;
-  background-color: #ffffff;
-  color: #d41443;
+  background-color: var(--white-color);
+  color: var(--btn-first-color);
   font-family: DM Sans;
   font-weight: 700;
   font-size: 14px;
@@ -221,7 +221,7 @@
 
   &:hover,
   &:hover {
-    background-color: #ecebeb;
+    background-color: var(--header-btn-hover);
   }
 
   @media screen and (min-width: 768px) {
@@ -233,7 +233,7 @@
 }
 
 .section-about__button--icon {
-  fill: #d41443;
+  fill: var(--btn-first-color);
 
   margin-top: 3px;
   margin-left: 10px;
