@@ -1,12 +1,16 @@
 <section class="section reviews-section" id="reviews">
   <div class="container reviews-container">
     <ul class="reviews-items__list list-no-ls">
-      <li class="reviews-items__item slides fade">
-        <img
-          src="../src/images/mobil/comment-foto1-mobil-1x.png"
-          alt="first comment"
-          class="reviews-item__image"
-        />
+      <li class="reviews-items__item slider fade">
+        <picture class="reviews-item__image">
+          <source
+            srcset="
+              ../src/images/mobil/testimonials-01.png    1x,
+              ../src/images/mobil/testimonials-01_2x.png 2x
+            "
+          />
+          <img src="../src/images/mobil/testimonials-01_2x.png" alt="first comment" />
+        </picture>
         <div class="reviews-item__background">
           <div class="reviews-item__gradient">
             <p class="reviews-item__text">
@@ -17,12 +21,16 @@
         </div>
         <p class="reviews-item__title">Emily, Los Angeles</p>
       </li>
-      <li class="reviews-items__item slides fade">
-        <img
-          src="../src/images/mobil/comment-foto1-mobil-1x.png"
-          alt="first comment"
-          class="reviews-item__image"
-        />
+      <li class="reviews-items__item slider fade">
+        <picture class="reviews-item__image">
+          <source
+            srcset="
+              ../src/images/mobil/testimonials-02.png    1x,
+              ../src/images/mobil/testimonials-02_2x.png 2x
+            "
+          />
+          <img src="../src/images/mobil/testimonials-02_2x.png" alt="second comment" />
+        </picture>
         <div class="reviews-item__background">
           <div class="reviews-item__gradient">
             <p class="reviews-item__text">
@@ -34,12 +42,16 @@
         </div>
         <p class="reviews-item__title">Emily, Los Angeles</p>
       </li>
-      <li class="reviews-items__item slides fade">
-        <img
-          src="../src/images/mobil/comment-foto1-mobil-1x.png"
-          alt="first comment"
-          class="reviews-item__image"
-        />
+      <li class="reviews-items__item slider fade">
+        <picture class="reviews-item__image">
+          <source
+            srcset="
+              ../src/images/mobil/testimonials-03.png    1x,
+              ../src/images/mobil/testimonials-03_2x.png 2x
+            "
+          />
+          <img src="../src/images/mobil/testimonials-03_2x.png" alt="third comment" />
+        </picture>
         <div class="reviews-item__background">
           <div class="reviews-item__gradient">
             <p class="reviews-item__text">
@@ -53,32 +65,37 @@
       </li>
     </ul>
     <div style="text-align: center">
-      <span class="dot home-icon"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
     </div>
   </div>
   <script>
-    var slideIndex = 0;
-    showSlides();
+    var slideIndex = 1;
+    showSlides(slideIndex);
 
-    function showSlides() {
+    function currentSlide(n) {
+      showSlides((slideIndex = n));
+    }
+
+    function showSlides(n) {
       var i;
-      var slides = document.getElementsByClassName('slides');
+      var slides = document.getElementsByClassName('slider');
       var dots = document.getElementsByClassName('dot');
+      if (n > slides.length) {
+        slideIndex = 1;
+      }
+      if (n < 1) {
+        slideIndex = slides.length;
+      }
       for (i = 0; i < slides.length; i++) {
         slides[i].style.display = 'none';
-      }
-      slideIndex++;
-      if (slideIndex > slides.length) {
-        slideIndex = 1;
       }
       for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(' active', '');
       }
       slides[slideIndex - 1].style.display = 'flex';
       dots[slideIndex - 1].className += ' active';
-      setTimeout(showSlides, 5000);
     }
   </script>
 </section>
