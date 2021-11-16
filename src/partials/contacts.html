@@ -1,4 +1,4 @@
-<section class="section contacts-section">
+<section id="contacts-section" class="section contacts-section">
   <div class="container contacts-container">
     <div class="contacts-wrap">
       <h2 class="visually-hidden">Contacts</h2>
@@ -81,11 +81,61 @@
           </svg>
         </button>
         <button class="contants-btn__btn contacts-btn--white" type="submit">
-          Franchise
+          <a href="#modal-contacts" class="link-no-tdn contants-btn__btn contacts-btn--white">
+            Franchise</a
+          >
           <svg class="contacts-btn__icon-white" width="8" height="16">
             <use href="./images/icons-new/newsprite1411.svg#icon-small-arrow"></use>
           </svg>
         </button>
+      </div>
+    </div>
+  </div>
+  <div id="modal-contacts" class="modal-contacts">
+    <div class="modal-contacts__body">
+      <div class="modal-contacts__content">
+        <a href="#contacts-section" class="modal-contacts__close link-no-tdn">X</a>
+        <div class="modal-contacts__title">Franchise</div>
+        <div class="modal-contacts__form">
+          <p class="modal-contacts__title2">Your contact details</p>
+          <div>
+            <form action="#">
+              <label class="modal-contacts__label">
+                Name
+                <span class="modal-contacts__wrapper"
+                  ><input
+                    class="modal-contacts__input"
+                    type="text"
+                    name="name"
+                    placeholder="Den  "
+                  />
+                </span>
+              </label>
+              <label class="modal-contacts__label">
+                Phone
+                <span class="modal-contacts__wrapper">
+                  <input
+                    class="modal-contacts__input"
+                    type="tel"
+                    name="tel"
+                    placeholder="+61(0) 123 456 789 " /></span
+              ></label>
+              <label class="modal-contacts__label">
+                Mail
+                <span class="modal-contacts__wrapper">
+                  <input
+                    class="modal-contacts__input"
+                    type="email"
+                    name="email"
+                    placeholder="Den@gmail.com"
+                  /> </span
+              ></label>
+              <button type="button" class="contants-btn__btn contacts-btn--white centr">
+                Отправить
+              </button>
+            </form>
+          </div>
+        </div>
       </div>
     </div>
   </div>

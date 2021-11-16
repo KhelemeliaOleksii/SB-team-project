@@ -19,7 +19,7 @@
   @media screen and (min-width: 768px) {
     padding-bottom: 87px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     padding-bottom: 63px;
   }
 }
@@ -33,7 +33,7 @@
   @media screen and (min-width: 768px) {
     top: -78px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     top: -102px;
   }
 }
@@ -61,7 +61,7 @@
       margin-right: 20px;
     }
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     width: 330px;
     &:not(:last-child) {
       margin-right: 30px;
@@ -86,7 +86,7 @@
     line-height: calc(30 / 16);
     margin-bottom: 30px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     margin-bottom: 32px;
   }
 }
@@ -103,7 +103,7 @@
     line-height: calc(26 / 14);
     margin-bottom: 14px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     font-size: 16px;
     line-height: calc(30 / 16);
     margin-bottom: 10px;
@@ -123,7 +123,7 @@
     margin-bottom: 60px;
     width: 145px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     font-size: 16px;
     line-height: calc(30 / 16);
     margin-bottom: 64px;
@@ -144,7 +144,7 @@
     margin-top: 30px;
     width: 157px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     margin-top: 32px;
     width: 234px;
   }
@@ -155,7 +155,7 @@
   @media screen and (min-width: 768px) {
     margin-bottom: 30px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     margin-bottom: 32px;
   }
 }
@@ -174,7 +174,7 @@
       margin-bottom: 16px;
     }
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     font-size: 16px;
     line-height: calc(30 / 16);
   }
@@ -191,7 +191,7 @@
   @media screen and (min-width: 768px) {
     padding-top: 30px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     padding-top: 32px;
   }
 }
@@ -205,7 +205,7 @@
     font-size: 14px;
     line-height: calc(26 / 14);
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     font-size: 16px;
     line-height: calc(30 / 16);
   }
@@ -227,7 +227,7 @@
   @media screen and (min-width: 768px) {
     width: 191px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     width: 198px;
   }
 }
@@ -245,7 +245,7 @@
     margin-top: 81px;
     width: 100%;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     margin-top: 86px;
     flex-direction: row;
     align-items: center;
@@ -300,3 +300,109 @@
     margin-left: 13px;
   }
 }
+.modal-contacts {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #ffa5bad9;
+  top: 0px;
+  left: 0px;
+  opacity: 0;
+  visibility: hidden;
+}
+.modal-contacts:target {
+  opacity: 1;
+  visibility: visible;
+}
+.modal-contacts__body {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 10px;
+  // position: relative;
+  border-radius: 10px;
+}
+.modal-contacts__content {
+  position: relative;
+  max-width: 768px;
+  padding: 30px;
+  background-color: #d41342;
+}
+.modal-contacts__close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 25px;
+  color: #ffffff;
+}
+.modal-contacts__title {
+  color: #ffffff;
+  font-size: 32px;
+  line-height: calc(40 / 32);
+  font-weight: 900;
+  text-align: center;
+}
+// .modal-contacts__form {
+// }
+
+// <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3302.255279076353!2d-118.3804309853327!3d34.139810520558775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c295d250e154c9%3A0xff3165a02b90ff1e!2sIce%20Kream%20Dispensary!5e0!3m2!1sru!2sua!4v1636983557073!5m2!1sru!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+// <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3027.49774905007!2d-73.98528188512964!3d40.64095704989656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25b29ff3bb277%3A0xd4406bb4d1109a07!2sIce%20Cream%20House!5e0!3m2!1sru!2sua!4v1636983624642!5m2!1sru!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+.modal-contacts__title2 {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: calc(23 / 20);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+.modal-contacts__label {
+  display: block;
+  margin-bottom: 10px;
+  margin-top: 4px;
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  color: #ffffff;
+}
+.modal-contacts__textarea {
+  padding: 12px 16px;
+  height: 120px;
+  resize: none;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  background: transparent;
+  outline: none;
+  &:focus {
+    border-color: #ffffff;
+  }
+}
+
+.modal-contacts__input {
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 40px;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  background: #ffffff;
+  outline: none;
+}
+
+.modal-contacts__wrapper {
+  display: block;
+  position: relative;
+  margin-top: 4px;
+}
+.centr {
+  margin: 0 auto;
+}
+// .js-menu-container {
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+//   transform: translateX(100%);
+// }
