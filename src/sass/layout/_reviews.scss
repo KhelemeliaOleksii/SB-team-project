@@ -166,11 +166,11 @@
   margin: 0 2px;
   background-color: #d9d9d9;
   border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+  display: inline-block;  
 }
 
-.home-icon {
+.active {
+  background-color: #d31342;
   height: 12px;
   width: 12px;
   margin: 0;
@@ -182,16 +182,6 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  fill: #d9d9d9;
-  transition: background-color 0.6s ease;
-}
-
-.home-icon.active {
-  background-color: transparent;
-}
-
-.active {
-  background-color: #d31342;
 }
 
 @-webkit-keyframes fade {
