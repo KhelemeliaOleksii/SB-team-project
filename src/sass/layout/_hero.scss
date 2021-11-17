@@ -44,7 +44,7 @@
 }
 
 .hero__bg-ice-cream {
-  background-image: url(../images/mobil/hero-icecream-mobil-1x.png);
+  background-image: url(../images/mobil/hero-icecream-mobil@1x.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -66,25 +66,37 @@
     width: 236px;
     height: 557px;
   }
-  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    background-image: url(../images/mobil/hero-icecream-mobil-2x.png);
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (-o-min-device-pixel-ratio: 2/1),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/mobil/hero-icecream-mobil@2x.png);
   }
   @media screen and (min-width: 768px) {
-    background-image: url(../images/tablet/hero-icecream-tablet-1x.png);
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(../images/tablet/hero-icecream-tablet-2x.png);
+    background-image: url(../images/tablet/hero-icecream-tablet@1x.png);
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (-o-min-device-pixel-ratio: 2/1),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/tablet/hero-icecream-tablet@2x.png);
     }
   }
   @media screen and (min-width: 1280px) {
-    background-image: url(../images/desktop/hero-icecream1x.png);
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(../images/desktop/hero-icecream2x.png);
+    background-image: url(../images/desktop/hero-icecream@1x.png);
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (-o-min-device-pixel-ratio: 2/1),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/desktop/hero-icecream@2x.png);
     }
   }
 }
 
 .hero__bg-milk {
-  background-image: url(../images/tablet/hero-milk-tablet-1x.png);
+  background-image: url(../images/tablet/hero-milk-tablet@1x.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -103,21 +115,29 @@
     left: 37px;
   }
   @media screen and (min-width: 768px) {
-    background-image: url(../images/tablet/hero-milk-tablet-1x.png);
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(../images/tablet/hero-milk-tablet-2x.png);
+    background-image: url(../images/tablet/hero-milk-tablet@1x.png);
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (-o-min-device-pixel-ratio: 2/1),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/tablet/hero-milk-tablet@2x.png);
     }
   }
   @media screen and (min-width: 1280px) {
-    background-image: url(../images/desktop/hero-milk-desktop1x.png);
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(../images/desktop/hero-milk-desktop2x.png);
+    background-image: url(../images/desktop/hero-milk-desktop@1x.png);
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (-o-min-device-pixel-ratio: 2/1),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/desktop/hero-milk-desktop@2x.png);
     }
   }
 }
 
 .hero__bg-girl {
-  background-image: url(../images/tablet/girl-tablet-1x.png);
+  background-image: url(../images/tablet/girl-tablet@1x.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -135,15 +155,23 @@
     right: 69px;
   }
   @media screen and (min-width: 768px) {
-    background-image: url(../images/tablet/girl-tablet-1x.png);
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(../images/tablet/girl-tablet-2x.png);
+    background-image: url(../images/tablet/girl-tablet@1x.png);
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (-o-min-device-pixel-ratio: 2/1),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/tablet/girl-tablet@2x.png);
     }
   }
   @media screen and (min-width: 1200px) {
-    background-image: url(../images/desktop/girl1x.png);
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(../images/desktop/girl2x.png);
+    background-image: url(../images/desktop/girl@1x.png);
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (-o-min-device-pixel-ratio: 2/1),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/desktop/girl@2x.png);
     }
   }
 }
@@ -179,14 +207,22 @@
   position: absolute;
   bottom: 34px;
   left: 154px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   fill: var(--btn-first-color);
   &:hover,
   &:focus {
     background-color: var(--header-btn-hover);
   }
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   @media screen and (max-width: 767px) {
     display: none;
@@ -236,6 +272,8 @@
 }
 
 .hero__btn-nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   & > li:not(:last-child) {
     margin-right: 8px;
@@ -271,6 +309,8 @@
   &:focus {
     background-color: var(--hero-btn-hover);
   }
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   @media screen and (min-width: 1280px) {
     font-size: 14px;
@@ -285,6 +325,8 @@
   &:focus {
     background-color: var(--header-btn-hover);
   }
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
