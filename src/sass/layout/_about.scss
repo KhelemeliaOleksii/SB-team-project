@@ -43,7 +43,7 @@
 }
 
 .section-about__title-label {
-  font-family: Titan One;
+  font-family: Titan One, cursive;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.17;
@@ -67,7 +67,7 @@
 }
 
 .section-about__title-primary {
-  font-family: Titan One;
+  font-family: Titan One, cursive;
   font-weight: 400;
   font-size: 34px;
   line-height: 1.15;
@@ -95,11 +95,20 @@
 }
 
 .section-about__wraper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 
   @media screen and (max-width: 767px) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
   }
 }
@@ -142,7 +151,7 @@
 }
 
 .section-about__inform-primary {
-  font-family: DM Sans;
+  font-family: 'DM Sans', sans-serif;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.58;
@@ -168,7 +177,7 @@
 }
 
 .section-about__inform-secondary {
-  font-family: DM Sans;
+  font-family: 'DM Sans', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -198,10 +207,12 @@
 }
 
 .section-about__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   background-color: var(--white-color);
   color: var(--btn-first-color);
-  font-family: DM Sans;
+  font-family: 'DM Sans', sans-serif;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.29;
@@ -210,13 +221,25 @@
 
   cursor: pointer;
   text-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 
   padding: 13px 37px;
 
+  -webkit-transition-property: background-color;
+
+  -o-transition-property: background-color;
+
   transition-property: background-color;
+  -webkit-transition-duration: 250ms;
+  -o-transition-duration: 250ms;
   transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
@@ -244,7 +267,17 @@
 .animation {
   &.section-about {
     background-size: 100%;
+    -webkit-animation: scale 700ms linear;
     animation: scale 700ms linear;
+
+    @-webkit-keyframes scale {
+      0% {
+        background-size: 200%;
+      }
+      100% {
+        background-size: 100%;
+      }
+    }
 
     @keyframes scale {
       0% {
@@ -263,7 +296,9 @@
     z-index: 0;
     &:hover,
     &:focus {
+      -webkit-animation: swing;
       animation: swing;
+      -webkit-animation-duration: 700ms;
       animation-duration: 700ms;
 
       &::after {
@@ -291,6 +326,8 @@
 
       opacity: 0%;
 
+      -webkit-animation: rubberBand 800ms linear;
+
       animation: rubberBand 800ms linear;
     }
   }
@@ -316,9 +353,19 @@
   background-color: var(--footer-bg-color);
 
   opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
   transform: scale(1);
+  -webkit-transition-property: -webkit-transform opacity visibility;
+  transition-property: -webkit-transform opacity visibility;
+  -o-transition-property: transform opacity visibility;
   transition-property: transform opacity visibility;
+  transition-property: transform opacity visibility, -webkit-transform opacity visibility;
+  -webkit-transition-duration: 250ms;
+  -o-transition-duration: 250ms;
   transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   overflow-y: scroll;
@@ -328,9 +375,80 @@
     visibility: hidden;
     opacity: 0;
 
+    -webkit-transform: scale(0);
+
+    -ms-transform: scale(0);
+
     transform: scale(0);
+    -webkit-transition-property: -webkit-transform opacity visibility;
+    transition-property: -webkit-transform opacity visibility;
+    -o-transition-property: transform opacity visibility;
     transition-property: transform opacity visibility;
+    transition-property: transform opacity visibility, -webkit-transform opacity visibility;
+    -webkit-transition-duration: 250ms;
+    -o-transition-duration: 250ms;
     transition-duration: 250ms;
+    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    -o-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.section-about__backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9998;
+
+  width: 100%;
+  height: 100%;
+
+  background-image: url(../images/desktop/milk-modal-bottom.png);
+
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+
+  background-color: var(--footer-bg-color);
+
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition-property: -webkit-transform opacity visibility;
+  transition-property: -webkit-transform opacity visibility;
+  -o-transition-property: transform opacity visibility;
+  transition-property: transform opacity visibility;
+  transition-property: transform opacity visibility, -webkit-transform opacity visibility;
+  -webkit-transition-duration: 250ms;
+  -o-transition-duration: 250ms;
+  transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  overflow-y: scroll;
+
+  &.is-hidden-modal {
+    pointer-events: none;
+    visibility: hidden;
+    opacity: 0;
+
+    -webkit-transform: scale(0);
+
+    -ms-transform: scale(0);
+
+    transform: scale(0);
+    -webkit-transition-property: -webkit-transform opacity visibility;
+    transition-property: -webkit-transform opacity visibility;
+    -o-transition-property: transform opacity visibility;
+    transition-property: transform opacity visibility;
+    transition-property: transform opacity visibility, -webkit-transform opacity visibility;
+    -webkit-transition-duration: 250ms;
+    -o-transition-duration: 250ms;
+    transition-duration: 250ms;
+    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    -o-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
@@ -343,8 +461,16 @@
 
   font-size: 20px;
 
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 
   background-color: var(--white-color);
@@ -369,6 +495,8 @@
   position: absolute;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 
   background-image: url(../images/desktop/milk-modal-top.png);
@@ -398,7 +526,7 @@
 }
 
 .section-about__modal-inform-primary {
-  font-family: DM Sans;
+  font-family: 'DM Sans', sans-serif;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.58;
@@ -420,7 +548,7 @@
 }
 
 .section-about__modal-inform-secondary {
-  font-family: DM Sans;
+  font-family: 'DM Sans', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
