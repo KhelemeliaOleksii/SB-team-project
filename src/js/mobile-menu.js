@@ -41,13 +41,22 @@
 (() => {
   const mobileMenu = document.querySelector('.js-menu-container');
   const refs = {
-    openModalBtn: document.querySelector('[data-modal-buy-open]'),
-    closeModalBtn: document.querySelector('[data-modal-buy-close]'),
+    openModalBtns: document.querySelectorAll('[data-modal-buy-open]'),
+    closeModalBtns: document.querySelectorAll('[data-modal-buy-close]'),
     modal: document.querySelector('[data-modal-buy]'),
   };
 
-  refs.openModalBtn.addEventListener('click', toggleModal);
-  refs.closeModalBtn.addEventListener('click', toggleModal);
+  refs.openModalBtns.forEach(item => {
+    item.addEventListener('click', event => {
+      toggleModal();
+    });
+  });
+
+  refs.closeModalBtns.forEach(item => {
+    item.addEventListener('click', event => {
+      toggleModal();
+    });
+  });
 
   function toggleModal() {
     mobileMenu.classList.remove('is-open');
