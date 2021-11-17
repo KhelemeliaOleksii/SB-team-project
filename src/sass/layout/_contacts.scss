@@ -219,7 +219,8 @@
     line-height: calc(30 / 16);
   }
 }
-.contants-btn__btn {
+.contants-btn__btn--p,
+.contants-btn__btn--w {
   font-size: 16px;
   line-height: calc(20 / 16);
   font-weight: 700;
@@ -359,4 +360,64 @@
   @media screen and (min-width: 768px) {
     margin-left: 13px;
   }
+}
+.contacts-menu-btn {
+  min-height: 40px;
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  color: var(--white-color);
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+.contacts-menu-btn.js-open-menu {
+  display: block;
+  background-color: var(--btn-first-color-hover);
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: var(--white-color);
+    color: var(--btn-first-color);
+  }
+}
+.contacts-menu-container {
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 32px;
+  background-color: var(--circle-title-color);
+  z-index: 999;
+  transform: translateX(100%);
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contacts-menu-container.is-open {
+  transform: translateX(0);
+}
+.contacts-menu-container .contacts-menu-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: #fff;
+}
+.mobile-menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
