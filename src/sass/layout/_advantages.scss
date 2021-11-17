@@ -1,14 +1,12 @@
 .advantages-section {
   background-color: var(--footer-bg-color);
   padding-bottom: 97px;
+  
   @media screen and (min-width: 768px) {
     padding-bottom: 140px;
   }
-  @media screen and (min-width: 768px) {
-    padding-bottom: 240px;
-  }
-  @media screen and (min-width: 768px) {
-    padding-bottom: 310px;
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 140px;
   }
 }
 
