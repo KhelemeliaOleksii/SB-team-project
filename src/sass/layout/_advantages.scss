@@ -1,7 +1,7 @@
 .advantages-section {
   background-color: var(--footer-bg-color);
   padding-bottom: 97px;
-  
+
   @media screen and (min-width: 768px) {
     padding-bottom: 140px;
   }
@@ -71,44 +71,42 @@
       }
     }
   }
-    @media screen and (min-width: 768px) {
-      font-size: 48px;
-      margin-bottom: 13px;
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    margin-bottom: 13px;
 
-      line-height: calc(55 / 48);
-    }
-
-    @media screen and (min-width: 1280px) {
-      font-size: 58px;
-      margin-bottom: 15px;
-      text-align: right;
-      line-height: calc(66 / 58);
-    }
+    line-height: calc(55 / 48);
   }
 
-  .advantages__figure-milk::before {
-    content: '';
+  @media screen and (min-width: 1280px) {
+    font-size: 58px;
+    margin-bottom: 15px;
+    line-height: calc(66 / 58);
+  }
+}
 
-    background-size: cover;
-    background-position: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+.advantages__figure-milk::before {
+  content: '';
 
-    margin-bottom: 16px;
-    width: 33px;
-    height: 50px;
-    background-repeat: no-repeat;
-    background-image: url(../images/mobil/icon-milk-mobile@1x.png);
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 
-    @media (min-device-pixel-ratio: 2),
-      (-webkit-min-device-pixel-ratio: 2),
-      (-o-min-device-pixel-ratio: 2/1),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/mobil/icon-milk-mobile@2x.png);
-    }
-  
+  margin-bottom: 16px;
+  width: 33px;
+  height: 50px;
+  background-repeat: no-repeat;
+  background-image: url(../images/mobil/icon-milk-mobile@1x.png);
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (-o-min-device-pixel-ratio: 2/1),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/mobil/icon-milk-mobile@2x.png);
+  }
 
   @media screen and (min-width: 768px) {
     margin-bottom: 36px;
@@ -118,10 +116,10 @@
   }
 }
 .advantages__figure-milk:hover:before {
-background-image: url(../images/mobil/icon-milk-mobile2@.png);
-    width: 50px;
-    height: 50px;
-    transform: translateX(101%);
+  background-image: url(../images/mobil/icon-milk-mobile2@.png);
+  width: 50px;
+  height: 50px;
+  transform: translateX(101%);
 }
 
 .advantages__figure-apple::before {
@@ -153,13 +151,11 @@ background-image: url(../images/mobil/icon-milk-mobile2@.png);
   @media screen and (min-width: 1280px) {
     margin-bottom: 40px;
   }
-
 }
 .advantages__figure-apple:hover:before {
-background-image: url(../images/mobil/icon-apple-mobile2@.png);
-transform: translateX(101%);
+  background-image: url(../images/mobil/icon-apple-mobile2@.png);
+  transform: translateX(101%);
 }
-
 
 .advantages__figure-ice::before {
   content: '';
@@ -192,10 +188,10 @@ transform: translateX(101%);
 }
 
 .advantages__figure-ice:hover:before {
-background-image: url(../images/mobil/icon-ice-mobile2@.png);
-    width: 50px;
-    height: 50px;
-    transform: translateX(101%);
+  background-image: url(../images/mobil/icon-ice-mobile2@.png);
+  width: 50px;
+  height: 50px;
+  transform: translateX(101%);
 }
 .advantages__text {
   content: '';
@@ -218,14 +214,12 @@ background-image: url(../images/mobil/icon-ice-mobile2@.png);
   }
 
   &:hover
-  // &:focus 
+  // &:focus
   {
-color: orange;
-    
-animation-duration: 250ms;
-font-size: 18px;
-font-style: bold;
-}
-}
+    color: orange;
 
-  
+    animation-duration: 250ms;
+    font-size: 18px;
+    font-style: bold;
+  }
+}
