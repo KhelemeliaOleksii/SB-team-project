@@ -1,5 +1,5 @@
 .section-about {
-  background-color: #fff5f6;
+  background-color: var(--footer-bg-color);
   padding-top: 145px;
   padding-bottom: 40px;
 
@@ -43,14 +43,14 @@
 }
 
 .section-about__title-label {
-  font-family: Titan One;
+  font-family: Titan One, cursive;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.17;
   text-align: center;
   text-transform: uppercase;
 
-  color: #ffa5ba;
+  color: var(--circle-title-color);
 
   margin-bottom: 15px;
 
@@ -67,7 +67,7 @@
 }
 
 .section-about__title-primary {
-  font-family: Titan One;
+  font-family: Titan One, cursive;
   font-weight: 400;
   font-size: 34px;
   line-height: 1.15;
@@ -75,7 +75,7 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
 
-  color: #d41443;
+  color: var(--btn-first-color);
 
   margin-bottom: 25px;
 
@@ -95,11 +95,20 @@
 }
 
 .section-about__wraper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 
   @media screen and (max-width: 767px) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
   }
 }
@@ -142,12 +151,12 @@
 }
 
 .section-about__inform-primary {
-  font-family: DM Sans;
+  font-family: 'DM Sans', sans-serif;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.58;
 
-  color: #000000;
+  color: var(--black-color);
 
   margin-bottom: 35px;
 
@@ -168,13 +177,13 @@
 }
 
 .section-about__inform-secondary {
-  font-family: DM Sans;
+  font-family: 'DM Sans', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.58;
 
-  color: #907e82;
+  color: var(--brown-color-text);
 
   margin-bottom: 20px;
 
@@ -198,10 +207,12 @@
 }
 
 .section-about__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  background-color: #ffffff;
-  color: #d41443;
-  font-family: DM Sans;
+  background-color: var(--white-color);
+  color: var(--btn-first-color);
+  font-family: 'DM Sans', sans-serif;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.29;
@@ -210,18 +221,30 @@
 
   cursor: pointer;
   text-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 
   padding: 13px 37px;
 
+  -webkit-transition-property: background-color;
+
+  -o-transition-property: background-color;
+
   transition-property: background-color;
+  -webkit-transition-duration: 250ms;
+  -o-transition-duration: 250ms;
   transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:hover {
-    background-color: #ecebeb;
+    background-color: var(--header-btn-hover);
   }
 
   @media screen and (min-width: 768px) {
@@ -233,8 +256,317 @@
 }
 
 .section-about__button--icon {
-  fill: #d41443;
+  fill: var(--btn-first-color);
 
   margin-top: 3px;
   margin-left: 10px;
+}
+
+// ______________АНИМАЦИИ
+
+.animation {
+  &.section-about {
+    background-size: 100%;
+    -webkit-animation: scale 700ms linear;
+    animation: scale 700ms linear;
+
+    @-webkit-keyframes scale {
+      0% {
+        background-size: 200%;
+      }
+      100% {
+        background-size: 100%;
+      }
+    }
+
+    @keyframes scale {
+      0% {
+        background-size: 200%;
+      }
+      100% {
+        background-size: 100%;
+      }
+    }
+  }
+}
+
+.section-about__image-thumb {
+  @media screen and (min-width: 1280px) {
+    position: relative;
+    z-index: 0;
+    &:hover,
+    &:focus {
+      -webkit-animation: swing;
+      animation: swing;
+      -webkit-animation-duration: 700ms;
+      animation-duration: 700ms;
+
+      &::after {
+        display: block;
+        opacity: 100%;
+      }
+    }
+
+    &::after {
+      content: '';
+      display: none;
+
+      position: absolute;
+      width: 516px;
+      height: 516px;
+      top: 0;
+      left: 0;
+      z-index: 999;
+
+      background-image: url(../images/desktop/myy.png);
+
+      background-repeat: no-repeat;
+      background-position: right -2px bottom 140px;
+      background-size: 38%;
+
+      opacity: 0%;
+
+      -webkit-animation: rubberBand 800ms linear;
+
+      animation: rubberBand 800ms linear;
+    }
+  }
+}
+
+// ____________Бекдроп и модальное окно
+
+.section-about__backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9998;
+
+  width: 100%;
+  height: 100%;
+
+  background-image: url(../images/desktop/milk-modal-bottom.png);
+
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+
+  background-color: var(--footer-bg-color);
+
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition-property: -webkit-transform opacity visibility;
+  transition-property: -webkit-transform opacity visibility;
+  -o-transition-property: transform opacity visibility;
+  transition-property: transform opacity visibility;
+  transition-property: transform opacity visibility, -webkit-transform opacity visibility;
+  -webkit-transition-duration: 250ms;
+  -o-transition-duration: 250ms;
+  transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  overflow-y: scroll;
+
+  &.is-hidden-modal {
+    pointer-events: none;
+    visibility: hidden;
+    opacity: 0;
+
+    -webkit-transform: scale(0);
+
+    -ms-transform: scale(0);
+
+    transform: scale(0);
+    -webkit-transition-property: -webkit-transform opacity visibility;
+    transition-property: -webkit-transform opacity visibility;
+    -o-transition-property: transform opacity visibility;
+    transition-property: transform opacity visibility;
+    transition-property: transform opacity visibility, -webkit-transform opacity visibility;
+    -webkit-transition-duration: 250ms;
+    -o-transition-duration: 250ms;
+    transition-duration: 250ms;
+    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    -o-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.section-about__backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9998;
+
+  width: 100%;
+  height: 100%;
+
+  background-image: url(../images/desktop/milk-modal-bottom.png);
+
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+
+  background-color: var(--footer-bg-color);
+
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition-property: -webkit-transform opacity visibility;
+  transition-property: -webkit-transform opacity visibility;
+  -o-transition-property: transform opacity visibility;
+  transition-property: transform opacity visibility;
+  transition-property: transform opacity visibility, -webkit-transform opacity visibility;
+  -webkit-transition-duration: 250ms;
+  -o-transition-duration: 250ms;
+  transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  overflow-y: scroll;
+
+  &.is-hidden-modal {
+    pointer-events: none;
+    visibility: hidden;
+    opacity: 0;
+
+    -webkit-transform: scale(0);
+
+    -ms-transform: scale(0);
+
+    transform: scale(0);
+    -webkit-transition-property: -webkit-transform opacity visibility;
+    transition-property: -webkit-transform opacity visibility;
+    -o-transition-property: transform opacity visibility;
+    transition-property: transform opacity visibility;
+    transition-property: transform opacity visibility, -webkit-transform opacity visibility;
+    -webkit-transition-duration: 250ms;
+    -o-transition-duration: 250ms;
+    transition-duration: 250ms;
+    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    -o-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.section-about__modal-close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  z-index: 9999;
+
+  font-size: 20px;
+
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+
+  background-color: var(--white-color);
+  color: var(--btn-first-color);
+  text-align: center;
+
+  cursor: pointer;
+
+  width: 25px;
+  height: 25px;
+
+  border-radius: 50%;
+
+  &:hover,
+  &:hover {
+    background-color: var(--btn-first-color);
+    color: var(--white-color);
+  }
+}
+
+.section-about__modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+
+  background-image: url(../images/desktop/milk-modal-top.png);
+
+  background-repeat: no-repeat;
+  background-position: top 200px;
+  background-size: 40%;
+
+  background-color: var(--hero-bg-color);
+
+  border-radius: 22px;
+
+  padding: 40px 10px;
+
+  @media screen and (max-width: 479px) {
+    width: 320px;
+  }
+
+  @media screen and (min-width: 480px) {
+    max-width: 480px;
+    padding: 40px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 980px;
+  }
+}
+
+.section-about__modal-inform-primary {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.58;
+
+  color: var(--black-color);
+
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.79;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 1.75;
+    letter-spacing: 0.04em;
+  }
+}
+
+.section-about__modal-inform-secondary {
+  font-family: 'DM Sans', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.58;
+
+  color: var(--black-color);
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.79;
+    letter-spacing: 0.04em;
+  }
+
+  @media screen and (min-width: 1280px) {
+    line-height: 1.92;
+  }
 }
