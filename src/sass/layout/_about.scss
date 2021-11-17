@@ -381,10 +381,15 @@
 
   border-radius: 22px;
 
-  padding: 40px;
+  padding: 40px 10px;
 
-  @media screen and (max-width: 1279px) {
+  @media screen and (max-width: 479px) {
+    width: 320px;
+  }
+
+  @media screen and (min-width: 480px) {
     max-width: 480px;
+    padding: 40px;
   }
 
   @media screen and (min-width: 1280px) {
