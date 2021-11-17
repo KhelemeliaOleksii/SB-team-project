@@ -15,4 +15,4 @@ const e=document.querySelector(".scroll-animation");e.classList.remove("animatio
 },{}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss"),require("./js/mobile-menu"),require("./js/slider"),require("./js/up"),require("./js/scroll"),require("./js/scroll-animation"),require("./js/modal");
 },{"./sass/main.scss":"clu1","./js/mobile-menu":"sByI","./js/slider":"wzuc","./js/up":"kzJA","./js/scroll":"N8YO","./js/scroll-animation":"hfZ8","./js/modal":"RSqK"}]},{},["Focm"], null)
-//# sourceMappingURL=/SB-team-project/src.8c79bae7.js.map
+//# sourceMappingURL=/SB-team-project/src.6a40d385.js.map
