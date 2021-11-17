@@ -295,3 +295,145 @@
     }
   }
 }
+
+// ____________Бекдроп и модальное окно
+
+.section-about__backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9998;
+
+  width: 100%;
+  height: 100%;
+
+  background-image: url(../images/desktop/milk-modal-bottom.png);
+
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+
+  background-color: var(--footer-bg-color);
+
+  opacity: 1;
+  transform: scale(1);
+  transition-property: transform opacity visibility;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  overflow-y: scroll;
+
+  &.is-hidden-modal {
+    pointer-events: none;
+    visibility: hidden;
+    opacity: 0;
+
+    transform: scale(0);
+    transition-property: transform opacity visibility;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.section-about__modal-close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  z-index: 9999;
+
+  font-size: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--white-color);
+  color: var(--btn-first-color);
+  text-align: center;
+
+  cursor: pointer;
+
+  width: 25px;
+  height: 25px;
+
+  border-radius: 50%;
+
+  &:hover,
+  &:hover {
+    background-color: var(--btn-first-color);
+    color: var(--white-color);
+  }
+}
+
+.section-about__modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background-image: url(../images/desktop/milk-modal-top.png);
+
+  background-repeat: no-repeat;
+  background-position: top 200px;
+  background-size: 40%;
+
+  background-color: var(--hero-bg-color);
+
+  border-radius: 22px;
+
+  padding: 40px;
+
+  @media screen and (max-width: 1279px) {
+    max-width: 480px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 980px;
+  }
+}
+
+.section-about__modal-inform-primary {
+  font-family: DM Sans;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.58;
+
+  color: var(--black-color);
+
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.79;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 1.75;
+    letter-spacing: 0.04em;
+  }
+}
+
+.section-about__modal-inform-secondary {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.58;
+
+  color: var(--black-color);
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.79;
+    letter-spacing: 0.04em;
+  }
+
+  @media screen and (min-width: 1280px) {
+    line-height: 1.92;
+  }
+}
