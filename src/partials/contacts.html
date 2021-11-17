@@ -80,10 +80,8 @@
             <use href="./images/icons-new/newsprite1411.svg#icon-small-arrow"></use>
           </svg>
         </button>
-        <button class="contants-btn__btn contacts-btn--white" type="submit">
-          <a href="#modal-contacts" class="link-no-tdn contants-btn__btn contacts-btn--white">
-            Franchise</a
-          >
+        <button class="contants-btn__btn contacts-btn--white" type="button" franchise-modal-open>
+          Franchise
           <svg class="contacts-btn__icon-white" width="8" height="16">
             <use href="./images/icons-new/newsprite1411.svg#icon-small-arrow"></use>
           </svg>
@@ -91,10 +89,11 @@
       </div>
     </div>
   </div>
-  <div id="modal-contacts" class="modal-contacts">
+
+  <div class="modal-contacts is-hidden-modal" franchise-modal>
     <div class="modal-contacts__body">
       <div class="modal-contacts__content">
-        <a href="#contacts-section" class="modal-contacts__close link-no-tdn">X</a>
+        <div class="modal-contacts__close link-no-tdn" franchise-modal-close>X</div>
         <div class="modal-contacts__title">Franchise</div>
         <div class="modal-contacts__form">
           <p class="modal-contacts__title2">Your contact details</p>
