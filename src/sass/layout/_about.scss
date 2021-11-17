@@ -318,7 +318,7 @@
       left: 0;
       z-index: 999;
 
-      background-image: url(../images/desktop/myy.png);
+      background-image: url(../images/desktop/cow-myy.png);
 
       background-repeat: no-repeat;
       background-position: right -2px bottom 140px;
@@ -528,7 +528,7 @@
 .section-about__modal-inform-primary {
   font-family: 'DM Sans', sans-serif;
   font-weight: 500;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.58;
 
   color: var(--black-color);
@@ -536,12 +536,12 @@
   margin-bottom: 20px;
 
   @media screen and (min-width: 768px) {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.79;
   }
 
   @media screen and (min-width: 1280px) {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.75;
     letter-spacing: 0.04em;
   }
