@@ -12,6 +12,7 @@
 .contacts-section {
   background: #fff5f6;
 }
+
 .contacts-container {
   padding-bottom: 29px;
   position: relative;
@@ -20,6 +21,11 @@
   }
   @media screen and (min-width: 1280px) {
     padding-bottom: 63px;
+    background-image: url(../images/desktop/sectionbg1x.png);
+    background-repeat: no-repeat;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/desktop/sectionbg2x.png);
+    }
   }
 }
 .contacts-wrap {
