@@ -22,9 +22,15 @@
 }
 
 .reviews-items__item {
-  //   @include align-items;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
@@ -70,7 +76,6 @@
   line-height: 2.55;
   text-align: center;
   color: #000000;
-  //   @include font-config(500, normal, 2.55, 0em, #000000);
   @media screen and (min-width: 768px) {
     height: 83px;
     max-width: 460px;
@@ -167,6 +172,8 @@
   background-color: #d9d9d9;
   border-radius: 50%;
   display: inline-block;
+  -webkit-transition: background-color 0.6s ease;
+  -o-transition: background-color 0.6s ease;
   transition: background-color 0.6s ease;
 }
 
